@@ -18,6 +18,9 @@ namespace RockstarGamesLauncher.ViewModels
         [ObservableProperty]
         public GameModel? selectedGame;
 
+        [ObservableProperty]
+        public bool isExpanded = false;
+
         public GamesViewModel()
         {
             Games = GetGames();
@@ -32,6 +35,13 @@ namespace RockstarGamesLauncher.ViewModels
                 string json = file.ReadToEnd();
                 return JsonSerializer.Deserialize<ObservableCollection<GameModel>>(json);
             }
+        }
+
+        [RelayCommand]
+        public void ToggleExpand()
+        {
+            IsExpanded = !IsExpanded;
+            Console.WriteLine(IsExpanded);
         }
     }
 }
