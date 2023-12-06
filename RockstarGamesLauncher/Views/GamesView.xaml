@@ -78,7 +78,7 @@
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
 
-                <Border Grid.Row="1" Padding="35,0,35,0">
+                <Border Grid.Row="1" Padding="35,0,0,0">
                     <StackPanel
                         Grid.Row="2"
                         Margin="0,-75,0,0"

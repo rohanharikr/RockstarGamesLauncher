@@ -1,0 +1,132 @@
+﻿
+<UserControl
+    x:Class="RockstarGamesLauncher.Controls.Slider"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:RockstarGamesLauncher.Controls"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <StackPanel
+        Width="780"
+        CanHorizontallyScroll="True"
+        Orientation="Horizontal">
+        <Button Foreground="White">Left</Button>
+        <Button Foreground="White">Right</Button>
+        <Border
+            Width="240"
+            Height="280"
+            Margin="10,0,10,0"
+            Padding="5"
+            Background="Black">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Image
+                    Grid.Row="0"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+                    Source="https://media-rockstargames-com.akamaized.net/tina-uploads/posts/897442k4k4a939/16ed2ee6ace215a1327c402257030532f0c0bc2b.jpg"
+                    Stretch="UniformToFill" />
+                <Label
+                    Grid.Row="1"
+                    Padding="10"
+                    Content="Testing" />
+            </Grid>
+        </Border>
+        <Border
+            Width="240"
+            Height="280"
+            Margin="10,0,10,0"
+            Padding="5"
+            Background="Black">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Image
+                    Grid.Row="0"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+                    Source="https://media-rockstargames-com.akamaized.net/tina-uploads/posts/897442k4k4a939/16ed2ee6ace215a1327c402257030532f0c0bc2b.jpg"
+                    Stretch="UniformToFill" />
+                <Label
+                    Grid.Row="1"
+                    Padding="10"
+                    Content="Testing" />
+            </Grid>
+        </Border>
+        <Border
+            Width="240"
+            Height="280"
+            Margin="10,0,10,0"
+            Padding="5"
+            Background="Black">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Image
+                    Grid.Row="0"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+                    Source="https://media-rockstargames-com.akamaized.net/tina-uploads/posts/897442k4k4a939/16ed2ee6ace215a1327c402257030532f0c0bc2b.jpg"
+                    Stretch="UniformToFill" />
+                <Label
+                    Grid.Row="1"
+                    Padding="10"
+                    Content="Testing" />
+            </Grid>
+        </Border>
+        <Border
+            Width="240"
+            Height="280"
+            Margin="10,0,10,0"
+            Padding="5"
+            Background="Black">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Image
+                    Grid.Row="0"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+                    Source="https://media-rockstargames-com.akamaized.net/tina-uploads/posts/897442k4k4a939/16ed2ee6ace215a1327c402257030532f0c0bc2b.jpg"
+                    Stretch="UniformToFill" />
+                <Label
+                    Grid.Row="1"
+                    Padding="10"
+                    Content="Testing" />
+            </Grid>
+        </Border>
+        <Border
+            Width="240"
+            Height="280"
+            Margin="10,0,10,0"
+            Padding="5"
+            Background="Black">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Image
+                    Grid.Row="0"
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch"
+                    Source="https://media-rockstargames-com.akamaized.net/tina-uploads/posts/897442k4k4a939/16ed2ee6ace215a1327c402257030532f0c0bc2b.jpg"
+                    Stretch="UniformToFill" />
+                <Label
+                    Grid.Row="1"
+                    Padding="10"
+                    Content="Testing" />
+            </Grid>
+        </Border>
+    </StackPanel>
+</UserControl>
