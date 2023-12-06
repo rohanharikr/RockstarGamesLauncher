@@ -1,0 +1,80 @@
+[
+  {
+    "slug": "gta-v",
+    "name": "Grand Theft Auto V",
+    "icon": "/Resources/Icons/gta-v.png",
+    "logo": "",
+    "images": [
+      "https://media-rockstargames-com.akamaized.net/rockstargames-newsite/img/global/downloads/wallpapers/games/v_pestcontrol_2560x1600.jpg",
+      "https://media-rockstargames-com.akamaized.net/rockstargames-newsite/img/global/downloads/wallpapers/games/v_michael_with_sign_2880x1800.jpg",
+      "https://media-rockstargames-com.akamaized.net/rockstargames-newsite/img/global/downloads/wallpapers/games/v_trevor_atv_2880x1800.jpg",
+      "https://media-rockstargames-com.akamaized.net/rockstargames-newsite/img/global/downloads/wallpapers/games/v_franklin_chop_2880x1800.jpg",
+      "https://media-rockstargames-com.akamaized.net/rockstargames-newsite/img/global/downloads/wallpapers/games/v_franklin_bike_chase_2880x1800.jpg",
+      "https://media-rockstargames-com.akamaized.net/rockstargames-newsite/img/global/downloads/wallpapers/games/v_chop_2880x1800.jpg"
+    ],
+    "feed": [
+      {
+        "title": "2X GTA$ and RP on Project Overthrow Missions",
+        "image": "https://media-rockstargames-com.akamaized.net/tina-uploads/posts/897442k4k4a939/16ed2ee6ace215a1327c402257030532f0c0bc2b.jpg",
+        "link": "https://www.rockstargames.com/newswire/article/897442k4k4a939/2x-gta-and-rp-on-project-overthrow-missions"
+      },
+      {
+        "title": "Get the Galaxy Livery for the Mammoth Avenger",
+        "image": "https://media-rockstargames-com.akamaized.net/tina-uploads/posts/897442k4k4a939/48341d4bbdc2334fd68012a94c7be41267e795ad.jpg",
+        "link": "https://www.rockstargames.com/newswire/article/897442k4k4a939/2x-gta-and-rp-on-project-overthrow-missions"
+      },
+      {
+        "title": "Grand Theft Auth V: Visit the official site",
+        "image": "https://media-rockstargames-com.akamaized.net/rockstargames-newsite/img/global/downloads/buddyiconsconavatars/v_starlet_256x256.jpg",
+        "link": "https://www.rockstargames.com/gta-v"
+      },
+      {
+        "title": "Find Out More on the Rockstar Newswire",
+        "image": "https://media-rockstargames-com.akamaized.net/rockstargames-newsite/img/global/downloads/wallpapers/games/gtav_logo_2560x1600.jpg",
+        "link": "https://www.rockstargames.com/newswire"
+      }
+    ]
+  },
+  {
+    "slug": "rdr-online",
+    "name": "Red Dead Online",
+    "icon": "/Resources/Icons/rdr-online.png",
+    "logo": "",
+    "images": [
+      "https://www.rockstargames.com/img/global/downloads/wallpapers/games/rdo_bountyhunters_desktop.jpg",
+      "https://www.rockstargames.com/img/global/downloads/wallpapers/games/rdr2_naturalist_desktop.jpg",
+      "https://www.rockstargames.com/img/global/downloads/wallpapers/games/rdo_bloodmoney_desktop.jpg",
+      "https://www.rockstargames.com/img/global/downloads/wallpapers/games/rdr2_rdo_frontierpursuits_desktop.jpg",
+      "https://media-rockstargames-com.akamaized.net/rockstargames-newsite/img/global/downloads/wallpapers/games/rdr2_rdo_officialart_desktop.jpg",
+      "https://media-rockstargames-com.akamaized.net/rockstargames-newsite/img/global/downloads/wallpapers/games/rdr2_moonshiners_desktop.jpg"
+    ],
+    "feed": [
+      {
+        "title": "Find Out More on the Rockstar Newswire",
+        "image": "https://media-rockstargames-com.akamaized.net/rockstargames-newsite/img/global/downloads/wallpapers/games/rdr2_tshirt_logo_textured_desktop.jpg",
+        "link": "https://www.rockstargames.com/newswire"
+      }
+    ]
+  },
+  {
+    "slug": "gta-iv",
+    "name": "Grand Theft Auto IV",
+    "icon": "/Resources/Icons/gta-iv.png",
+    "logo": "",
+    "images": [
+      "https://www.rockstargames.com/img/global/downloads/wallpapers/games/gtaiv_action02_2560x1600.jpg",
+      "https://www.rockstargames.com/img/global/downloads/wallpapers/games/rdr2_naturalist_desktop.jpg",
+      "https://media-rockstargames-com.akamaized.net/rockstargames-newsite/img/global/downloads/wallpapers/games/gtaiv_action01_2560x1600.jpg",
+      "https://www.rockstargames.com/img/global/downloads/wallpapers/games/gtaiv_outdoor-niko_2560x1600.jpg",
+      "https://media-rockstargames-com.akamaized.net/rockstargames-newsite/img/global/downloads/wallpapers/games/gtaiv_outdoor-lollipop_2560x1600.jpg",
+      "https://media-rockstargames-com.akamaized.net/rockstargames-newsite/img/global/downloads/wallpapers/games/gtaiv_action04_2560x1600.jpg"
+    ],
+    "feed": [
+      {
+        "title": "Grand Theft Auth IV: Visit the official site",
+        "image": "https://media-rockstargames-com.akamaized.net/rockstargames-newsite/img/global/downloads/wallpapers/games/gtaiv_lollipop_2560x1600.jpg",
+        "link": "https://www.rockstargames.com/games/IV"
+      }
+    ]
+  }
+]

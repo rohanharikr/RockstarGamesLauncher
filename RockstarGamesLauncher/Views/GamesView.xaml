@@ -1,0 +1,112 @@
+﻿<Page
+    x:Class="RockstarGamesLauncher.Views.GamesView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:RockstarGamesLauncher.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:viewmodels="clr-namespace:RockstarGamesLauncher.ViewModels"
+    d:DataContext="{d:DesignData Type=viewmodels:GamesViewModel}"
+    mc:Ignorable="d">
+
+    <Page.DataContext>
+        <viewmodels:GamesViewModel x:Name="GamesViewModel" />
+    </Page.DataContext>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="320" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.Background>
+            <ImageBrush ImageSource="{Binding SelectedGame.Images[0]}" Stretch="UniformToFill" />
+        </Grid.Background>
+
+        <Border
+            Grid.Column="0"
+            Padding="35,0,35,35"
+            Background="Black">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="135" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <StackPanel Grid.Row="1" VerticalAlignment="Top">
+                    <StackPanel Margin="0,20,0,0">
+                        <Label FontWeight="Bold">Now available</Label>
+                        <ListView
+                            Background="Transparent"
+                            BorderThickness="0"
+                            ItemsSource="{Binding Games}"
+                            SelectedItem="{Binding SelectedGame}">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <StackPanel
+                                        Margin="0,10,0,0"
+                                        Cursor="Hand"
+                                        Orientation="Horizontal">
+                                        <Image
+                                            Width="30"
+                                            Height="30"
+                                            RenderOptions.BitmapScalingMode="HighQuality"
+                                            Source="{Binding Icon}" />
+                                        <Label
+                                            Margin="10,0,0,0"
+                                            VerticalAlignment="Center"
+                                            Content="{Binding Name}"
+                                            Opacity="0.65" />
+                                    </StackPanel>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </StackPanel>
+                </StackPanel>
+
+                <StackPanel Grid.Row="2">
+                    <Label>Collapse</Label>
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <Border Grid.Column="1">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <Border Grid.Row="1" Padding="35,0,35,0">
+                    <StackPanel
+                        Grid.Row="2"
+                        Margin="0,-75,0,0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        CanHorizontallyScroll="True"
+                        Orientation="Horizontal">
+                        <StackPanel VerticalAlignment="Center">
+                            <Image
+                                Width="280"
+                                HorizontalAlignment="Left"
+                                Source="https://upload.wikimedia.org/wikipedia/commons/2/22/Red_Dead_Redemption_2_Logo.png" />
+                            <Button Margin="0,20,0,0" Style="{StaticResource BuyButton}">BUY NOW</Button>
+                        </StackPanel>
+
+                        <Border
+                            Width="420"
+                            Margin="50,0,50,0"
+                            Padding="5"
+                            Background="Black">
+                            <StackPanel>
+                                <Image Source="https://media-rockstargames-com.akamaized.net/tina-uploads/posts/39o99ak85o8819/809e80cfae4921bb9185a74792c4a27a225992d8.jpg" />
+                                <Label>Celebrate Thanksgiving in Red Dead Online With Trader Bonuses</Label>
+                            </StackPanel>
+                        </Border>
+                    </StackPanel>
+                </Border>
+            </Grid>
+        </Border>
+    </Grid>
+</Page>
