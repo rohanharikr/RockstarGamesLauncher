@@ -3,7 +3,7 @@
     "slug": "gta-v",
     "name": "Grand Theft Auto V",
     "icon": "/Resources/Icons/gta-v.png",
-    "logo": "",
+    "logo": "https://cdn.freebiesupply.com/logos/large/2x/grand-theft-auto-v-logo-png-transparent.png",
     "images": [
       "https://media-rockstargames-com.akamaized.net/rockstargames-newsite/img/global/downloads/wallpapers/games/v_pestcontrol_2560x1600.jpg",
       "https://media-rockstargames-com.akamaized.net/rockstargames-newsite/img/global/downloads/wallpapers/games/v_michael_with_sign_2880x1800.jpg",
@@ -39,7 +39,7 @@
     "slug": "rdr-online",
     "name": "Red Dead Online",
     "icon": "/Resources/Icons/rdr-online.png",
-    "logo": "",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Red_Dead_Online_logo.svg/2560px-Red_Dead_Online_logo.svg.png",
     "images": [
       "https://www.rockstargames.com/img/global/downloads/wallpapers/games/rdo_bountyhunters_desktop.jpg",
       "https://www.rockstargames.com/img/global/downloads/wallpapers/games/rdr2_naturalist_desktop.jpg",
@@ -60,7 +60,7 @@
     "slug": "gta-iv",
     "name": "Grand Theft Auto IV",
     "icon": "/Resources/Icons/gta-iv.png",
-    "logo": "",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/GTA_IV_logo.png/999px-GTA_IV_logo.png",
     "images": [
       "https://www.rockstargames.com/img/global/downloads/wallpapers/games/gtaiv_action02_2560x1600.jpg",
       "https://www.rockstargames.com/img/global/downloads/wallpapers/games/rdr2_naturalist_desktop.jpg",

@@ -33,11 +33,5 @@ namespace RockstarGamesLauncher.ViewModels
                 return JsonSerializer.Deserialize<ObservableCollection<GameModel>>(json);
             }
         }
-
-        [RelayCommand]
-        void SelectGame(GameModel selectedGame)
-        {
-            Console.WriteLine(123);
-        }
     }
 }

@@ -90,20 +90,32 @@
                             <Image
                                 Width="280"
                                 HorizontalAlignment="Left"
-                                Source="https://upload.wikimedia.org/wikipedia/commons/2/22/Red_Dead_Redemption_2_Logo.png" />
+                                RenderOptions.BitmapScalingMode="HighQuality"
+                                Source="{Binding SelectedGame.Logo}" />
                             <Button Margin="0,20,0,0" Style="{StaticResource BuyButton}">BUY NOW</Button>
                         </StackPanel>
 
-                        <Border
-                            Width="420"
-                            Margin="50,0,50,0"
-                            Padding="5"
-                            Background="Black">
-                            <StackPanel>
-                                <Image Source="https://media-rockstargames-com.akamaized.net/tina-uploads/posts/39o99ak85o8819/809e80cfae4921bb9185a74792c4a27a225992d8.jpg" />
-                                <Label>Celebrate Thanksgiving in Red Dead Online With Trader Bonuses</Label>
-                            </StackPanel>
-                        </Border>
+                        <ListView ItemsSource="{Binding SelectedGame.Feed}" Background="Transparent" BorderThickness="0">
+                            <ListView.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <StackPanel Orientation="Horizontal" />
+                                </ItemsPanelTemplate>
+                            </ListView.ItemsPanel>
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <Border
+                                        Width="420"
+                                        Margin="10,0,10,0"
+                                        Padding="5"
+                                        Background="Black">
+                                        <StackPanel>
+                                            <Image Source="{Binding Image}" Stretch="UniformToFill" />
+                                            <Label Content="{Binding Title}" />
+                                        </StackPanel>
+                                    </Border>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
                     </StackPanel>
                 </Border>
             </Grid>
