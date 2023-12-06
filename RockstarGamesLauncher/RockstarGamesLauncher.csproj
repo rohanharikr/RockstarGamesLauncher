@@ -16,12 +16,32 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Resources\Icons\Close.png" />
+    <None Remove="Resources\Icons\gta-iv.png" />
+    <None Remove="Resources\Icons\gta-v.png" />
+    <None Remove="Resources\Icons\rdr-online.png" />
+    <None Remove="Resources\Icons\RocktarGamesLogo.ico" />
+    <None Remove="Resources\Images\RockstarGamesLogo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Resources\Images\RockstarGamesLogo.png">
+    <Resource Include="Resources\Icons\Close.png" />
+    <Resource Include="Resources\Icons\gta-iv.png" />
+    <Resource Include="Resources\Icons\gta-v.png" />
+    <Resource Include="Resources\Icons\rdr-online.png" />
+    <Resource Include="Resources\Icons\RocktarGamesLogo.ico" />
+    <Resource Include="Resources\Images\RockstarGamesLogo.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Resources\Data\games.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
 

@@ -21,17 +21,17 @@ namespace RockstarGamesLauncher.ViewModels
         public GamesViewModel()
         {
             Games = GetGames();
+            SelectedGame = Games.FirstOrDefault();
         }
 
         ObservableCollection<GameModel> GetGames()
         {
-            return new ObservableCollection<GameModel>();
             //TBD: Handle exceptions
-            /*using (StreamReader file = new StreamReader("Resources/Data/games.json"))
+            using (StreamReader file = new StreamReader("Resources/Data/games.json"))
             {
                 string json = file.ReadToEnd();
                 return JsonSerializer.Deserialize<ObservableCollection<GameModel>>(json);
-            }*/
+            }
         }
 
         [RelayCommand]
