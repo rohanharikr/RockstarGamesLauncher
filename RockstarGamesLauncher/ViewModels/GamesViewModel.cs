@@ -8,8 +8,6 @@ using System.IO;
 using System.Collections.ObjectModel;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using System.Windows.Media.Animation;
-using System.Windows;
 
 namespace RockstarGamesLauncher.ViewModels
 {
