@@ -8,6 +8,8 @@ using System.IO;
 using System.Collections.ObjectModel;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using System.Windows.Media.Animation;
+using System.Windows;
 
 namespace RockstarGamesLauncher.ViewModels
 {
@@ -19,7 +21,10 @@ namespace RockstarGamesLauncher.ViewModels
         public GameModel? selectedGame;
 
         [ObservableProperty]
+        [NotifyPropertyChangedFor(nameof(SidebarWidth))]
         public bool isExpanded = true;
+
+        public int SidebarWidth => IsExpanded ? 320 : 120;
 
         public GamesViewModel()
         {
@@ -41,7 +46,6 @@ namespace RockstarGamesLauncher.ViewModels
         public void ToggleExpand()
         {
             IsExpanded = !IsExpanded;
-            Console.WriteLine(IsExpanded);
         }
     }
 }
