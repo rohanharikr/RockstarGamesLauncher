@@ -19,7 +19,7 @@ namespace RockstarGamesLauncher.ViewModels
         public GameModel? selectedGame;
 
         [ObservableProperty]
-        public bool isExpanded = false;
+        public bool isExpanded = true;
 
         public GamesViewModel()
         {

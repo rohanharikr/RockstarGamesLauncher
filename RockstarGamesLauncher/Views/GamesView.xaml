@@ -9,10 +9,6 @@
     d:DataContext="{d:DesignData Type=viewmodels:GamesViewModel}"
     mc:Ignorable="d">
 
-    <Page.DataContext>
-        <viewmodels:GamesViewModel />
-    </Page.DataContext>
-
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="320" />
@@ -58,7 +54,7 @@
                                             VerticalAlignment="Center"
                                             Content="{Binding Name}"
                                             Opacity="0.65"
-                                            Visibility="{Binding Path=IsExpanded, RelativeSource={RelativeSource AncestorType={x:Type viewmodels:GamesViewModel}}, Converter={StaticResource BooleanToVisibilityConverter}}" />
+                                            Visibility="{Binding Path=DataContext.IsExpanded, Converter={StaticResource BooleanToVisibilityConverter}, RelativeSource={RelativeSource AncestorType={x:Type ListView}}}" />
                                     </StackPanel>
                                 </DataTemplate>
                             </ListView.ItemTemplate>
