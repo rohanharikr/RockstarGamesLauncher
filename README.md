@@ -1,5 +1,8 @@
 # Rockstar Games Launcher
 
+> [!NOTE]
+> This project is a work-in-progress.
+
 > [!IMPORTANT]
 > This project is strictly intended for educational purposes and is not affiliated with Rockstar Games.  
 > Please refer to the [Legal](#Legal) section for more information.
