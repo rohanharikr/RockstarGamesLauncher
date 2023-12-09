@@ -9,4 +9,8 @@
         <Setter Property="Padding" Value="0" />
         <Setter Property="Foreground" Value="White" />
     </Style>
+
+    <Style TargetType="TextBlock">
+        <Setter Property="Foreground" Value="White" />
+    </Style>
 </ResourceDictionary>
