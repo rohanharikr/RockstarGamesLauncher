@@ -39,7 +39,7 @@ namespace RockstarGamesLauncher.Views
 
         private void GoToUpdates(object sender, RoutedEventArgs e)
         {
-            Settings.Content = new SettingsGeneralView();
+            Settings.Content = new SettingsUpdatesView();
         }
 
         private void GoToLegal(object sender, RoutedEventArgs e)

@@ -18,9 +18,9 @@ namespace RockstarGamesLauncher.Views.Settings
     /// <summary>
     /// Interaction logic for SettingsUpdates.xaml
     /// </summary>
-    public partial class SettingsUpdates : Page
+    public partial class SettingsUpdatesView : Page
     {
-        public SettingsUpdates()
+        public SettingsUpdatesView()
         {
             InitializeComponent();
         }
