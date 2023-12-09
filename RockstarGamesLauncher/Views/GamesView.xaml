@@ -105,11 +105,31 @@
 
                 <StackPanel Grid.Row="2">
                     <Button
+                        Margin="5,0,0,0"
                         HorizontalAlignment="Left"
                         BorderThickness="0"
                         Command="{Binding ToggleExpandCommand}"
                         Foreground="White">
-                        Collapse
+                        <Image
+                            Width="30"
+                            Height="30"
+                            RenderOptions.BitmapScalingMode="HighQuality"
+                            RenderTransformOrigin="0.5,0.5"
+                            Source="/Resources/Icons/Sidebar.png">
+                            <Image.Style>
+                                <Style TargetType="Image">
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding IsExpanded}" Value="False">
+                                            <Setter Property="RenderTransform">
+                                                <Setter.Value>
+                                                    <ScaleTransform ScaleX="-1" />
+                                                </Setter.Value>
+                                            </Setter>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Image.Style>
+                        </Image>
                     </Button>
                 </StackPanel>
             </Grid>

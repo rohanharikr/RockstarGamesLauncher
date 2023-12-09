@@ -26,17 +26,19 @@ namespace RockstarGamesLauncher.Models
 
         [JsonPropertyName("feed")]
         public List<Post>? Feed { get; set; }
+        
+        public class Post()
+        {
+            [JsonPropertyName("title")]
+            public string? Title { get; set; }
+
+            [JsonPropertyName("image")]
+            public string? Image { get; set; }
+
+            [JsonPropertyName("link")]
+            public string? Link { get; set; }
+        }
     }
+    
 
-    public class Post()
-    {
-        [JsonPropertyName("title")]
-        public string? Title { get; set; }
-
-        [JsonPropertyName("image")]
-        public string? Image { get; set; }
-
-        [JsonPropertyName("link")]
-        public string? Link { get; set; }
-    }
 }

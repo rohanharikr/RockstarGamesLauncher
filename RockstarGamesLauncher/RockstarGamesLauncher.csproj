@@ -21,6 +21,7 @@
     <None Remove="Resources\Icons\gta-v.png" />
     <None Remove="Resources\Icons\rdr-online.png" />
     <None Remove="Resources\Icons\RocktarGamesLogo.ico" />
+    <None Remove="Resources\Icons\Sidebar.png" />
     <None Remove="Resources\Images\RockstarGamesLogo.png" />
   </ItemGroup>
 
@@ -34,6 +35,7 @@
     <Resource Include="Resources\Icons\gta-v.png" />
     <Resource Include="Resources\Icons\rdr-online.png" />
     <Resource Include="Resources\Icons\RocktarGamesLogo.ico" />
+    <Resource Include="Resources\Icons\Sidebar.png" />
     <Resource Include="Resources\Images\RockstarGamesLogo.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
