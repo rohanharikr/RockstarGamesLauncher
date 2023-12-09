@@ -1,0 +1,81 @@
+﻿<Page
+    x:Class="RockstarGamesLauncher.Views.Settings.SettingsLegalView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:RockstarGamesLauncher.Views.Settings"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Border>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="135" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Border
+                Grid.Row="1"
+                Grid.Column="0"
+                MaxWidth="750"
+                Padding="35,0,35,0">
+                <StackPanel HorizontalAlignment="Stretch">
+                    <DockPanel Height="80">
+                        <Label VerticalAlignment="Center" FontSize="20">Terms of Service</Label>
+                        <Button
+                            Width="160"
+                            Height="40"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Center"
+                            FontSize="16"
+                            Foreground="White">
+                            VIEW POLICY
+                        </Button>
+                    </DockPanel>
+                    <Border Height="0.35" Background="White" />
+                    <DockPanel Height="80">
+                        <Label VerticalAlignment="Center" FontSize="20">Privacy Policy</Label>
+                        <Button
+                            Width="160"
+                            Height="40"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Center"
+                            FontSize="16"
+                            Foreground="White">
+                            VIEW POLICY
+                        </Button>
+                    </DockPanel>
+                    <Border Height="0.35" Background="White" />
+                    <DockPanel Height="80">
+                        <Label VerticalAlignment="Center" FontSize="20">End User License Agreement</Label>
+                        <Button
+                            Width="160"
+                            Height="40"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Center"
+                            FontSize="16"
+                            Foreground="White">
+                            VIEW POLICY
+                        </Button>
+                    </DockPanel>
+                    <Border Height="0.35" Background="White" />
+                    <DockPanel Height="80">
+                        <Label VerticalAlignment="Center" FontSize="20">Third-Party Licenses</Label>
+                        <Button
+                            Width="160"
+                            Height="40"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Center"
+                            FontSize="16"
+                            Foreground="White">
+                            VIEW POLICY
+                        </Button>
+                    </DockPanel>
+                </StackPanel>
+            </Border>
+        </Grid>
+    </Border>
+</Page>

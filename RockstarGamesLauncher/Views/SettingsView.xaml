@@ -33,6 +33,7 @@
                                 HorizontalAlignment="Left"
                                 VerticalAlignment="Center"
                                 BorderThickness="0"
+                                Click="GoToGeneral"
                                 Foreground="White"
                                 Opacity="0.65">
                                 General
@@ -42,6 +43,7 @@
                                 HorizontalAlignment="Left"
                                 VerticalAlignment="Center"
                                 BorderThickness="0"
+                                Click="GoToAccountInfo"
                                 Foreground="White"
                                 Opacity="0.65">
                                 Account Information
@@ -51,6 +53,7 @@
                                 HorizontalAlignment="Left"
                                 VerticalAlignment="Center"
                                 BorderThickness="0"
+                                Click="GoToUpdates"
                                 Foreground="White"
                                 Opacity="0.65">
                                 Updates
@@ -60,6 +63,7 @@
                                 HorizontalAlignment="Left"
                                 VerticalAlignment="Center"
                                 BorderThickness="0"
+                                Click="GoToLegal"
                                 Foreground="White"
                                 Opacity="0.65">
                                 Legal
@@ -70,76 +74,9 @@
             </Grid>
         </Border>
 
-        <Border Grid.Column="1">
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="135" />
-                    <RowDefinition Height="*" />
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
-
-                <Border
-                    Grid.Row="1"
-                    Grid.Column="0"
-                    MaxWidth="750"
-                    Padding="35,0,35,0">
-                    <StackPanel HorizontalAlignment="Stretch">
-                        <DockPanel Height="80">
-                            <Label VerticalAlignment="Center" FontSize="20">Terms of Service</Label>
-                            <Button
-                                Width="160"
-                                Height="40"
-                                HorizontalAlignment="Right"
-                                VerticalAlignment="Center"
-                                FontSize="16"
-                                Foreground="White">
-                                VIEW POLICY
-                            </Button>
-                        </DockPanel>
-                        <Border Height="0.35" Background="White" />
-                        <DockPanel Height="80">
-                            <Label VerticalAlignment="Center" FontSize="20">Privacy Policy</Label>
-                            <Button
-                                Width="160"
-                                Height="40"
-                                HorizontalAlignment="Right"
-                                VerticalAlignment="Center"
-                                FontSize="16"
-                                Foreground="White">
-                                VIEW POLICY
-                            </Button>
-                        </DockPanel>
-                        <Border Height="0.35" Background="White" />
-                        <DockPanel Height="80">
-                            <Label VerticalAlignment="Center" FontSize="20">End User License Agreement</Label>
-                            <Button
-                                Width="160"
-                                Height="40"
-                                HorizontalAlignment="Right"
-                                VerticalAlignment="Center"
-                                FontSize="16"
-                                Foreground="White">
-                                VIEW POLICY
-                            </Button>
-                        </DockPanel>
-                        <Border Height="0.35" Background="White" />
-                        <DockPanel Height="80">
-                            <Label VerticalAlignment="Center" FontSize="20">Third-Party Licenses</Label>
-                            <Button
-                                Width="160"
-                                Height="40"
-                                HorizontalAlignment="Right"
-                                VerticalAlignment="Center"
-                                FontSize="16"
-                                Foreground="White">
-                                VIEW POLICY
-                            </Button>
-                        </DockPanel>
-                    </StackPanel>
-                </Border>
-            </Grid>
-        </Border>
+        <Frame
+            x:Name="Settings"
+            Grid.Column="1"
+            NavigationUIVisibility="Hidden" />
     </Grid>
 </Page>
