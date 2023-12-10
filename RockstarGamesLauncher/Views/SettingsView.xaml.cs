@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using RockstarGamesLauncher.Views.Settings;
+using RockstarGamesLauncher.ViewModels;
 
 namespace RockstarGamesLauncher.Views
 {
@@ -24,27 +25,7 @@ namespace RockstarGamesLauncher.Views
         public SettingsView()
         {
             InitializeComponent();
-            Settings.Content = new SettingsGeneralView();
-        }
-
-        private void GoToGeneral(object sender, RoutedEventArgs e)
-        {
-            Settings.Content = new SettingsGeneralView();
-        }
-
-        private void GoToAccountInfo(object sender, RoutedEventArgs e)
-        {
-            Settings.Content = new SettingsAccountInfoView();
-        }
-
-        private void GoToUpdates(object sender, RoutedEventArgs e)
-        {
-            Settings.Content = new SettingsUpdatesView();
-        }
-
-        private void GoToLegal(object sender, RoutedEventArgs e)
-        {
-            Settings.Content = new SettingsLegalView();
+            DataContext = new SettingsViewModel();
         }
     }
 }
