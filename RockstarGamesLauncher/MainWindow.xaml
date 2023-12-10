@@ -5,10 +5,12 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:RockstarGamesLauncher"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:viewmodels="clr-namespace:RockstarGamesLauncher.ViewModels"
     Width="1280"
     Height="600"
     MinWidth="1020"
     MinHeight="600"
+    d:DataContext="{d:DesignData Type=viewmodels:MainViewModel}"
     AllowsTransparency="True"
     WindowStartupLocation="CenterScreen"
     WindowStyle="None"
@@ -35,7 +37,7 @@
             <DockPanel
                 Grid.Row="0"
                 Background="Transparent"
-                MouseLeftButtonDown="StackPanel_MouseLeftButtonDown">
+                MouseLeftButtonDown="DragApp">
                 <Border Padding="1">
                     <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
                         <Button
@@ -61,7 +63,7 @@
                         Width="40"
                         Height="36"
                         BorderThickness="0"
-                        Click="Button_Click_1">
+                        Command="{Binding GotoGamesCommand}">
                         <Image
                             Grid.Row="0"
                             Width="40"
@@ -79,7 +81,7 @@
                             Margin="20,0,20,0"
                             VerticalAlignment="Center"
                             BorderThickness="0"
-                            Click="Button_Click_1"
+                            Command="{Binding GotoGamesCommand}"
                             FontSize="16"
                             FontWeight="Medium"
                             Foreground="White"
@@ -90,7 +92,7 @@
                             Margin="20,0,20,0"
                             VerticalAlignment="Center"
                             BorderThickness="0"
-                            Click="GoToStorePage"
+                            Command="{Binding GotoStoreCommand}"
                             FontSize="16"
                             FontWeight="Medium"
                             Foreground="White"
@@ -102,7 +104,7 @@
                             Padding="0"
                             VerticalAlignment="Center"
                             BorderThickness="0"
-                            Click="Button_Click"
+                            Command="{Binding GotoSettingsCommand}"
                             FontSize="16"
                             FontWeight="Medium"
                             Foreground="White"
@@ -124,8 +126,8 @@
         </Grid>
 
         <Frame
-            x:Name="Main"
             Grid.Row="0"
+            Content="{Binding CurrentPage}"
             NavigationUIVisibility="Hidden" />
     </Grid>
 </Window>

@@ -12,33 +12,28 @@ namespace RockstarGamesLauncher.ViewModels
     partial class SettingsViewModel : ObservableObject
     {
         [ObservableProperty]
-        object currentPage = new SettingsAccountInfoView();
-
-        public SettingsViewModel()
-        {
-            GoToGeneral();
-        }
+        object currentPage = new SettingsGeneralView();
 
         [RelayCommand]
-        void GoToGeneral()
+        void GotoGeneral()
         {
             CurrentPage = new SettingsGeneralView();
         }
 
         [RelayCommand]
-        void GoToAccountInfo()
+        void GotoAccountInfo()
         {
             CurrentPage = new SettingsAccountInfoView();
         }
 
         [RelayCommand]
-        void GoToUpdates()
+        void GotoUpdates()
         {
             CurrentPage = new SettingsUpdatesView();
         }
 
         [RelayCommand]
-        void GoToLegal()
+        void GotoLegal()
         {
             CurrentPage = new SettingsLegalView();
         }

@@ -35,7 +35,7 @@
                                 HorizontalAlignment="Left"
                                 VerticalAlignment="Center"
                                 BorderThickness="0"
-                                Command="{Binding GoToGeneralCommand}"
+                                Command="{Binding GotoGeneralCommand}"
                                 Foreground="White"
                                 Opacity="0.65">
                                 General
@@ -45,7 +45,7 @@
                                 HorizontalAlignment="Left"
                                 VerticalAlignment="Center"
                                 BorderThickness="0"
-                                Command="{Binding GoToAccountInfoCommand}"
+                                Command="{Binding GotoAccountInfoCommand}"
                                 Foreground="White"
                                 Opacity="0.65">
                                 Account Information
@@ -55,7 +55,7 @@
                                 HorizontalAlignment="Left"
                                 VerticalAlignment="Center"
                                 BorderThickness="0"
-                                Command="{Binding GoToUpdatesCommand}"
+                                Command="{Binding GotoUpdatesCommand}"
                                 Foreground="White"
                                 Opacity="0.65">
                                 Updates

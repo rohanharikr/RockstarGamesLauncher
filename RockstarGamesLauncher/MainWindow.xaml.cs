@@ -1,6 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Input;
 using RockstarGamesLauncher.Views;
+using RockstarGamesLauncher.ViewModels;
 
 namespace RockstarGamesLauncher
 {
@@ -12,32 +13,17 @@ namespace RockstarGamesLauncher
         public MainWindow()
         {
             InitializeComponent();
-            Main.Content = new GamesView();
+            DataContext = new MainViewModel();
         }
 
-        private void StackPanel_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        private void DragApp(object sender, MouseButtonEventArgs e)
         {
             DragMove();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Main.Content = new SettingsView();
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            Main.Content = new GamesView();
         }
 
         private void CloseApp(object sender, RoutedEventArgs e)
         {
             Close();
-        }
-
-        private void GoToStorePage(object sender, RoutedEventArgs e)
-        {
-            Main.Content = new StoreView();
         }
     }
 }
