@@ -1,132 +1,192 @@
 ﻿
 <UserControl
-    x:Class="RockstarGamesLauncher.Controls.Slider"
+    x:Class="RockstarGamesLauncher.Controls.Carousel"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:RockstarGamesLauncher.Controls"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Width="800"
+    Height="280"
     mc:Ignorable="d">
-    <StackPanel
-        Width="780"
-        CanHorizontallyScroll="True"
-        Orientation="Horizontal">
-        <Button Foreground="White">Left</Button>
-        <Button Foreground="White">Right</Button>
-        <Border
-            Width="240"
-            Height="280"
-            Margin="10,0,10,0"
-            Padding="5"
-            Background="Black">
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="Auto" />
-                </Grid.RowDefinitions>
+
+    <UserControl.Resources>
+        <Storyboard x:Key="CarouselStoryboard">
+            <DoubleAnimation Storyboard.TargetName="CarouselTransform" Storyboard.TargetProperty="X" />
+        </Storyboard>
+    </UserControl.Resources>
+
+    <Grid>
+        <Canvas ClipToBounds="True">
+            <StackPanel
+                x:Name="CarouselStack"
+                VerticalAlignment="Center"
+                Orientation="Horizontal">
+                <StackPanel.RenderTransform>
+                    <TranslateTransform x:Name="CarouselTransform" />
+                </StackPanel.RenderTransform>
+                <StackPanel.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="Margin" Value="0,0,20,0" />
+                    </Style>
+                </StackPanel.Resources>
+                <Border
+                    Width="250"
+                    Height="280"
+                    Padding="5"
+                    Background="Black">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="82*" />
+                            <RowDefinition Height="18*" />
+                        </Grid.RowDefinitions>
+
+                        <Image
+                            Grid.Row="0"
+                            HorizontalAlignment="Stretch"
+                            VerticalAlignment="Stretch"
+                            Source="https://media-rockstargames-com.akamaized.net/tina-uploads/posts/897442k4k4a939/16ed2ee6ace215a1327c402257030532f0c0bc2b.jpg"
+                            Stretch="UniformToFill" />
+                        <TextBlock
+                            Grid.Row="1"
+                            Padding="15,8,15,8"
+                            FontSize="12"
+                            Text="2X GTA$ and RP on Project Overthrow Missions"
+                            TextWrapping="Wrap" />
+                    </Grid>
+                </Border>
+                <Border
+                    Width="250"
+                    Height="280"
+                    Padding="5"
+                    Background="Black">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="82*" />
+                            <RowDefinition Height="18*" />
+                        </Grid.RowDefinitions>
+
+                        <Image
+                            Grid.Row="0"
+                            HorizontalAlignment="Stretch"
+                            VerticalAlignment="Stretch"
+                            Source="https://media-rockstargames-com.akamaized.net/tina-uploads/posts/897442k4k4a939/16ed2ee6ace215a1327c402257030532f0c0bc2b.jpg"
+                            Stretch="UniformToFill" />
+                        <TextBlock
+                            Grid.Row="1"
+                            Padding="15,8,15,8"
+                            FontSize="12"
+                            Text="2X GTA$ and RP on Project Overthrow Missions"
+                            TextWrapping="Wrap" />
+                    </Grid>
+                </Border>
+                <Border
+                    Width="250"
+                    Height="280"
+                    Padding="5"
+                    Background="Black">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="82*" />
+                            <RowDefinition Height="18*" />
+                        </Grid.RowDefinitions>
+
+                        <Image
+                            Grid.Row="0"
+                            HorizontalAlignment="Stretch"
+                            VerticalAlignment="Stretch"
+                            Source="https://media-rockstargames-com.akamaized.net/tina-uploads/posts/897442k4k4a939/16ed2ee6ace215a1327c402257030532f0c0bc2b.jpg"
+                            Stretch="UniformToFill" />
+                        <TextBlock
+                            Grid.Row="1"
+                            Padding="15,8,15,8"
+                            FontSize="12"
+                            Text="2X GTA$ and RP on Project Overthrow Missions"
+                            TextWrapping="Wrap" />
+                    </Grid>
+                </Border>
+                <Border
+                    Width="250"
+                    Height="280"
+                    Padding="5"
+                    Background="Black">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="82*" />
+                            <RowDefinition Height="18*" />
+                        </Grid.RowDefinitions>
+
+                        <Image
+                            Grid.Row="0"
+                            HorizontalAlignment="Stretch"
+                            VerticalAlignment="Stretch"
+                            Source="https://media-rockstargames-com.akamaized.net/tina-uploads/posts/897442k4k4a939/16ed2ee6ace215a1327c402257030532f0c0bc2b.jpg"
+                            Stretch="UniformToFill" />
+                        <TextBlock
+                            Grid.Row="1"
+                            Padding="15,8,15,8"
+                            FontSize="12"
+                            Text="2X GTA$ and RP on Project Overthrow Missions"
+                            TextWrapping="Wrap" />
+                    </Grid>
+                </Border>
+                <Border
+                    Width="250"
+                    Height="280"
+                    Padding="5"
+                    Background="Black">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="82*" />
+                            <RowDefinition Height="18*" />
+                        </Grid.RowDefinitions>
+
+                        <Image
+                            Grid.Row="0"
+                            HorizontalAlignment="Stretch"
+                            VerticalAlignment="Stretch"
+                            Source="https://media-rockstargames-com.akamaized.net/tina-uploads/posts/897442k4k4a939/16ed2ee6ace215a1327c402257030532f0c0bc2b.jpg"
+                            Stretch="UniformToFill" />
+                        <TextBlock
+                            Grid.Row="1"
+                            Padding="15,8,15,8"
+                            FontSize="12"
+                            Text="2X GTA$ and RP on Project Overthrow Missions"
+                            TextWrapping="Wrap" />
+                    </Grid>
+                </Border>
+            </StackPanel>
+        </Canvas>
+
+        <DockPanel>
+            <Button
+                Width="38"
+                Height="38"
+                HorizontalAlignment="Left"
+                Click="Right_Click">
+                <Button.Background>
+                    <SolidColorBrush Opacity="0.85" Color="Black" />
+                </Button.Background>
                 <Image
-                    Grid.Row="0"
-                    HorizontalAlignment="Stretch"
-                    VerticalAlignment="Stretch"
-                    Source="https://media-rockstargames-com.akamaized.net/tina-uploads/posts/897442k4k4a939/16ed2ee6ace215a1327c402257030532f0c0bc2b.jpg"
-                    Stretch="UniformToFill" />
-                <Label
-                    Grid.Row="1"
-                    Padding="10"
-                    Content="Testing" />
-            </Grid>
-        </Border>
-        <Border
-            Width="240"
-            Height="280"
-            Margin="10,0,10,0"
-            Padding="5"
-            Background="Black">
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="Auto" />
-                </Grid.RowDefinitions>
+                    Width="30"
+                    Height="30"
+                    Source="/Resources/Icons/LeftIcon.png" />
+            </Button>
+            <Button
+                x:Name="NextButton"
+                Width="38"
+                Height="38"
+                HorizontalAlignment="Right"
+                Click="Left_Click">
+                <Button.Background>
+                    <SolidColorBrush Opacity="0.85" Color="Black" />
+                </Button.Background>
                 <Image
-                    Grid.Row="0"
-                    HorizontalAlignment="Stretch"
-                    VerticalAlignment="Stretch"
-                    Source="https://media-rockstargames-com.akamaized.net/tina-uploads/posts/897442k4k4a939/16ed2ee6ace215a1327c402257030532f0c0bc2b.jpg"
-                    Stretch="UniformToFill" />
-                <Label
-                    Grid.Row="1"
-                    Padding="10"
-                    Content="Testing" />
-            </Grid>
-        </Border>
-        <Border
-            Width="240"
-            Height="280"
-            Margin="10,0,10,0"
-            Padding="5"
-            Background="Black">
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="Auto" />
-                </Grid.RowDefinitions>
-                <Image
-                    Grid.Row="0"
-                    HorizontalAlignment="Stretch"
-                    VerticalAlignment="Stretch"
-                    Source="https://media-rockstargames-com.akamaized.net/tina-uploads/posts/897442k4k4a939/16ed2ee6ace215a1327c402257030532f0c0bc2b.jpg"
-                    Stretch="UniformToFill" />
-                <Label
-                    Grid.Row="1"
-                    Padding="10"
-                    Content="Testing" />
-            </Grid>
-        </Border>
-        <Border
-            Width="240"
-            Height="280"
-            Margin="10,0,10,0"
-            Padding="5"
-            Background="Black">
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="Auto" />
-                </Grid.RowDefinitions>
-                <Image
-                    Grid.Row="0"
-                    HorizontalAlignment="Stretch"
-                    VerticalAlignment="Stretch"
-                    Source="https://media-rockstargames-com.akamaized.net/tina-uploads/posts/897442k4k4a939/16ed2ee6ace215a1327c402257030532f0c0bc2b.jpg"
-                    Stretch="UniformToFill" />
-                <Label
-                    Grid.Row="1"
-                    Padding="10"
-                    Content="Testing" />
-            </Grid>
-        </Border>
-        <Border
-            Width="240"
-            Height="280"
-            Margin="10,0,10,0"
-            Padding="5"
-            Background="Black">
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="Auto" />
-                </Grid.RowDefinitions>
-                <Image
-                    Grid.Row="0"
-                    HorizontalAlignment="Stretch"
-                    VerticalAlignment="Stretch"
-                    Source="https://media-rockstargames-com.akamaized.net/tina-uploads/posts/897442k4k4a939/16ed2ee6ace215a1327c402257030532f0c0bc2b.jpg"
-                    Stretch="UniformToFill" />
-                <Label
-                    Grid.Row="1"
-                    Padding="10"
-                    Content="Testing" />
-            </Grid>
-        </Border>
-    </StackPanel>
+                    Width="30"
+                    Height="30"
+                    Source="/Resources/Icons/RightIcon.png" />
+            </Button>
+        </DockPanel>
+    </Grid>
+
 </UserControl>

@@ -19,7 +19,9 @@
     <None Remove="Resources\Icons\Close.png" />
     <None Remove="Resources\Icons\gta-iv.png" />
     <None Remove="Resources\Icons\gta-v.png" />
+    <None Remove="Resources\Icons\LeftIcon.png" />
     <None Remove="Resources\Icons\rdr-online.png" />
+    <None Remove="Resources\Icons\RightIcon.png" />
     <None Remove="Resources\Icons\RocktarGamesLogo.ico" />
     <None Remove="Resources\Icons\Sidebar.png" />
     <None Remove="Resources\Images\RockstarGamesLogo.png" />
@@ -33,7 +35,9 @@
     <Resource Include="Resources\Icons\Close.png" />
     <Resource Include="Resources\Icons\gta-iv.png" />
     <Resource Include="Resources\Icons\gta-v.png" />
+    <Resource Include="Resources\Icons\LeftIcon.png" />
     <Resource Include="Resources\Icons\rdr-online.png" />
+    <Resource Include="Resources\Icons\RightIcon.png" />
     <Resource Include="Resources\Icons\RocktarGamesLogo.ico" />
     <Resource Include="Resources\Icons\Sidebar.png" />
     <Resource Include="Resources\Images\RockstarGamesLogo.png">
