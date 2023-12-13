@@ -21,8 +21,8 @@ namespace RockstarGamesLauncher.Models
         [JsonPropertyName("logo")]
         public string? Logo { get; set; }
 
-        [JsonPropertyName("images")]
-        public List<string>? Images { get; set; }
+        [JsonPropertyName("bg_image")]
+        public string? BackgroundImage{ get; set; }
 
         [JsonPropertyName("feed")]
         public List<Post>? Feed { get; set; }

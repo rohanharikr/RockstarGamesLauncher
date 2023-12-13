@@ -24,6 +24,10 @@
     <None Remove="Resources\Icons\RightIcon.png" />
     <None Remove="Resources\Icons\RocktarGamesLogo.ico" />
     <None Remove="Resources\Icons\Sidebar.png" />
+    <None Remove="Resources\Images\GTAIVLogo.png" />
+    <None Remove="Resources\Images\GTAVBackground.png" />
+    <None Remove="Resources\Images\GTAVLogo.png" />
+    <None Remove="Resources\Images\RedDeadOnlineLogo.png" />
     <None Remove="Resources\Images\RockstarGamesLogo.png" />
   </ItemGroup>
 
@@ -40,6 +44,10 @@
     <Resource Include="Resources\Icons\RightIcon.png" />
     <Resource Include="Resources\Icons\RocktarGamesLogo.ico" />
     <Resource Include="Resources\Icons\Sidebar.png" />
+    <Resource Include="Resources\Images\GTAIVLogo.png" />
+    <Resource Include="Resources\Images\GTAVBackground.png" />
+    <Resource Include="Resources\Images\GTAVLogo.png" />
+    <Resource Include="Resources\Images\RedDeadOnlineLogo.png" />
     <Resource Include="Resources\Images\RockstarGamesLogo.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>

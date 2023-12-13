@@ -17,7 +17,7 @@
         </Grid.ColumnDefinitions>
 
         <Grid.Background>
-            <ImageBrush ImageSource="{Binding SelectedGame.Images[0]}" Stretch="UniformToFill" />
+            <ImageBrush ImageSource="{Binding SelectedGame.BackgroundImage}" Stretch="UniformToFill" />
         </Grid.Background>
 
         <Border
@@ -154,14 +154,15 @@
                         </Grid.ColumnDefinitions>
                         <StackPanel
                             Grid.Column="0"
-                            Margin="0,0,80,0"
+                            Margin="0,0,60,0"
                             VerticalAlignment="Center">
                             <Image
                                 Width="280"
-                                HorizontalAlignment="Left"
+                                Height="200"
+                                HorizontalAlignment="Center"
                                 RenderOptions.BitmapScalingMode="HighQuality"
                                 Source="{Binding SelectedGame.Logo}" />
-                            <Button Margin="0,20,0,0" Style="{StaticResource BuyButton}">
+                            <Button Margin="0,16,0,0" Style="{StaticResource BuyButton}">
                                 BUY NOW
                             </Button>
                         </StackPanel>
