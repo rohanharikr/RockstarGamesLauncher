@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -58,6 +59,16 @@ namespace RockstarGamesLauncher.Controls
                 currentElement--;
                 AnimateCarousel();
             }
+        }
+
+        private void OpenFeedPost(object sender, RoutedEventArgs e)
+        {
+            var button = sender as Button;
+            string link = (string)button.Tag;
+            System.Diagnostics.Process.Start(new ProcessStartInfo(link)
+            {
+                UseShellExecute = true
+            });
         }
 
         private void AnimateCarousel()

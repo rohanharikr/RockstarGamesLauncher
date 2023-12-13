@@ -38,25 +38,27 @@
                             Margin="0,0,10,0"
                             Padding="5"
                             Background="Black">
-                            <Grid>
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="82*" />
-                                    <RowDefinition Height="18*" />
-                                </Grid.RowDefinitions>
+                            <Button Click="OpenFeedPost" Tag="{Binding Link}">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="82*" />
+                                        <RowDefinition Height="18*" />
+                                    </Grid.RowDefinitions>
 
-                                <Image
-                                    Grid.Row="0"
-                                    HorizontalAlignment="Stretch"
-                                    VerticalAlignment="Stretch"
-                                    Source="{Binding Image}"
-                                    Stretch="UniformToFill" />
-                                <TextBlock
-                                    Grid.Row="1"
-                                    Padding="15,8,15,8"
-                                    FontSize="12"
-                                    Text="{Binding Title}"
-                                    TextWrapping="Wrap" />
-                            </Grid>
+                                    <Image
+                                        Grid.Row="0"
+                                        HorizontalAlignment="Stretch"
+                                        VerticalAlignment="Stretch"
+                                        Source="{Binding Image}"
+                                        Stretch="UniformToFill" />
+                                    <TextBlock
+                                        Grid.Row="1"
+                                        Padding="15,8,15,8"
+                                        FontSize="12"
+                                        Text="{Binding Title}"
+                                        TextWrapping="Wrap" />
+                                </Grid>
+                            </Button>
                         </Border>
                     </DataTemplate>
                 </ItemsControl.ItemTemplate>
