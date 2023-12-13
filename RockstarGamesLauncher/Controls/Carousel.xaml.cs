@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,30 +20,38 @@ namespace RockstarGamesLauncher.Controls
     /// <summary>
     /// Interaction logic for Slider.xaml
     /// </summary>
+
     public partial class Carousel : UserControl
     {
         private int currentElement = 0;
-        private double cardWidth = 0f;
-        private double cardMargin = 0f;
+        private double cardWidth = 250;
+        private double cardMargin = 10;
 
         public Carousel()
         {
             InitializeComponent();
-            Border card = CarouselStack.Children.OfType<Border>().First();
-            cardWidth = card.Width;
-            cardMargin = card.Margin.Right;
         }
 
-        private void Left_Click(object sender, RoutedEventArgs e)
+        public IEnumerable Feed
         {
-            if (currentElement < 4)
+            get { return (IEnumerable)GetValue(FeedProperty); }
+            set { SetValue(FeedProperty, value); }
+        }
+
+        public static readonly DependencyProperty FeedProperty =
+            DependencyProperty.Register("Feed", typeof(IEnumerable), typeof(Carousel), new PropertyMetadata());
+
+
+        private void NextButtonClick(object sender, RoutedEventArgs e)
+        {
+            if (currentElement < CarouselStack.Items.Count - 1)
             {
                 currentElement++;
                 AnimateCarousel();
             }
         }
 
-        private void Right_Click(object sender, RoutedEventArgs e)
+        private void PrevButtonClick(object sender, RoutedEventArgs e)
         {
             if (currentElement > 0)
             {

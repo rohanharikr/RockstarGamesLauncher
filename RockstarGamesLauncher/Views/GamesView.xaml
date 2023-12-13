@@ -2,6 +2,7 @@
     x:Class="RockstarGamesLauncher.Views.GamesView"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="clr-namespace:RockstarGamesLauncher.Controls"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:RockstarGamesLauncher.Views"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
@@ -143,47 +144,29 @@
                 </Grid.RowDefinitions>
 
                 <Border Grid.Row="1" Padding="35,0,0,0">
-                    <StackPanel
-                        Grid.Row="2"
+                    <Grid
                         Margin="0,-75,0,0"
-                        HorizontalAlignment="Left"
-                        VerticalAlignment="Center"
-                        CanHorizontallyScroll="True"
-                        Orientation="Horizontal">
-                        <StackPanel VerticalAlignment="Center">
+                        HorizontalAlignment="Stretch"
+                        VerticalAlignment="Center">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <StackPanel
+                            Grid.Column="0"
+                            Margin="0,0,80,0"
+                            VerticalAlignment="Center">
                             <Image
                                 Width="280"
                                 HorizontalAlignment="Left"
                                 RenderOptions.BitmapScalingMode="HighQuality"
                                 Source="{Binding SelectedGame.Logo}" />
-                            <Button Margin="0,20,0,0" Style="{StaticResource BuyButton}">BUY NOW</Button>
+                            <Button Margin="0,20,0,0" Style="{StaticResource BuyButton}">
+                                BUY NOW
+                            </Button>
                         </StackPanel>
-
-                        <ListView
-                            Background="Transparent"
-                            BorderThickness="0"
-                            ItemsSource="{Binding SelectedGame.Feed}">
-                            <ListView.ItemsPanel>
-                                <ItemsPanelTemplate>
-                                    <StackPanel Orientation="Horizontal" />
-                                </ItemsPanelTemplate>
-                            </ListView.ItemsPanel>
-                            <ListView.ItemTemplate>
-                                <DataTemplate>
-                                    <Border
-                                        Width="420"
-                                        Margin="10,0,10,0"
-                                        Padding="5"
-                                        Background="Black">
-                                        <StackPanel>
-                                            <Image Source="{Binding Image}" Stretch="UniformToFill" />
-                                            <Label Content="{Binding Title}" />
-                                        </StackPanel>
-                                    </Border>
-                                </DataTemplate>
-                            </ListView.ItemTemplate>
-                        </ListView>
-                    </StackPanel>
+                        <controls:Carousel Grid.Column="1" Feed="{Binding SelectedGame.Feed}" />
+                    </Grid>
                 </Border>
             </Grid>
         </Border>
