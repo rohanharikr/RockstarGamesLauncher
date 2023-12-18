@@ -33,7 +33,7 @@
     "name": "Red Dead Online",
     "icon": "/Resources/Icons/rdr-online.png",
     "logo": "/Resources/Images/RedDeadOnlineLogo.png",
-    "bg_image": "/Resources/Images/GTAVBackground.png",
+    "bg_image": "/Resources/Images/RedDeadOnlineBackground.png",
     "feed": [
       {
         "title": "Find Out More on the Rockstar Newswire",
@@ -47,7 +47,7 @@
     "name": "Grand Theft Auto IV",
     "icon": "/Resources/Icons/gta-iv.png",
     "logo": "/Resources/Images/GTAIVLogo.png",
-    "bg_image": "/Resources/Images/GTAVBackground.png",
+    "bg_image": "/Resources/Images/GTAIVBackground.png",
     "feed": [
       {
         "title": "Grand Theft Auth IV: Visit the official site",
