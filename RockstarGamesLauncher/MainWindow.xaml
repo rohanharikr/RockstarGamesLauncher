@@ -6,7 +6,7 @@
     xmlns:local="clr-namespace:RockstarGamesLauncher"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:viewmodels="clr-namespace:RockstarGamesLauncher.ViewModels"
-    Width="1280"
+    Width="1020"
     Height="600"
     MinWidth="1020"
     MinHeight="600"
