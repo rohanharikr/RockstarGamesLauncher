@@ -44,8 +44,8 @@
     <Resource Include="Resources\Icons\RightIcon.png" />
     <Resource Include="Resources\Icons\RocktarGamesLogo.ico" />
     <Resource Include="Resources\Icons\Sidebar.png" />
-    <Resource Include="Resources\Images\GTAIVLogo.png" />
     <Resource Include="Resources\Images\GTAVBackground.png" />
+    <Resource Include="Resources\Images\GTAIVLogo.png" />
     <Resource Include="Resources\Images\GTAVLogo.png" />
     <Resource Include="Resources\Images\RedDeadOnlineLogo.png" />
     <Resource Include="Resources\Images\RockstarGamesLogo.png">
