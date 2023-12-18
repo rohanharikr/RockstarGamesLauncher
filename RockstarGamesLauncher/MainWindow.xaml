@@ -90,17 +90,6 @@
                         </Button>
                         <Button
                             Margin="20,0,20,0"
-                            VerticalAlignment="Center"
-                            BorderThickness="0"
-                            Command="{Binding GotoStoreCommand}"
-                            FontSize="16"
-                            FontWeight="Medium"
-                            Foreground="White"
-                            Opacity="0.65">
-                            STORE
-                        </Button>
-                        <Button
-                            Margin="20,0,20,0"
                             Padding="0"
                             VerticalAlignment="Center"
                             BorderThickness="0"

@@ -21,12 +21,6 @@ namespace RockstarGamesLauncher.ViewModels
         }
 
         [RelayCommand]
-        void GotoStore()
-        {
-            CurrentPage = new StoreView();
-        }
-
-        [RelayCommand]
         void GotoSettings()
         {
             CurrentPage = new SettingsView();
