@@ -22,13 +22,13 @@
                             BorderBrush="Black"
                             BorderThickness="1"
                             CornerRadius="6">
-                            <Label
+                            <TextBlock
                                 HorizontalAlignment="Center"
                                 VerticalAlignment="Center"
-                                Content="{TemplateBinding Content}"
                                 FontSize="22"
                                 FontWeight="Bold"
-                                Foreground="Black" />
+                                Foreground="Black"
+                                Text="{TemplateBinding Content}" />
                         </Border>
                     </Border>
                 </ControlTemplate>
