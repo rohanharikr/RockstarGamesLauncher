@@ -45,5 +45,11 @@ namespace RockstarGamesLauncher.ViewModels
         {
             IsExpanded = !IsExpanded;
         }
+
+        [RelayCommand]
+        public void SelectGame(GameModel selectGame)
+        {
+            SelectedGame = selectGame;
+        }
     }
 }

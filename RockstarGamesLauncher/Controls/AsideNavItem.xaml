@@ -7,19 +7,28 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     x:Name="AsideNavItemControl"
     mc:Ignorable="d">
-    <StackPanel
+    <Button
         Margin="0,20,0,0"
-        Cursor="Hand"
-        Orientation="Horizontal">
-        <Image
-            Width="30"
-            Height="30"
-            RenderOptions.BitmapScalingMode="HighQuality"
-            Source="{Binding Icon, ElementName=AsideNavItemControl}" />
-        <Label
-            Margin="15,0,0,0"
-            VerticalAlignment="Center"
-            Content="{Binding Label, ElementName=AsideNavItemControl}"
-            Opacity="0.65" />
-    </StackPanel>
+        HorizontalAlignment="Left"
+        BorderThickness="0"
+        Command="{Binding Command, ElementName=AsideNavItemControl}"
+        CommandParameter="{Binding CommandParameter, ElementName=AsideNavItemControl}">
+        <StackPanel Cursor="Hand" Orientation="Horizontal">
+            <Border
+                Width="2"
+                Height="30"
+                Margin="-75,0,0,0"
+                Background="{StaticResource RockstarYellow}" />
+            <Image
+                Width="30"
+                Height="30"
+                RenderOptions.BitmapScalingMode="HighQuality"
+                Source="{Binding Icon, ElementName=AsideNavItemControl}" />
+            <Label
+                Margin="15,0,0,0"
+                VerticalAlignment="Center"
+                Content="{Binding Label, ElementName=AsideNavItemControl}"
+                Opacity="0.65" />
+        </StackPanel>
+    </Button>
 </UserControl>
