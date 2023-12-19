@@ -46,12 +46,38 @@
                             Margin="5,0,5,0"
                             VerticalAlignment="Center"
                             BorderThickness="0"
+                            Click="MinimizeApp"
+                            Opacity="0.5">
+                            <Image
+                                Width="15"
+                                Height="15"
+                                Source="/Resources/Icons/MinimizeIcon.png" />
+                        </Button>
+                        <Button
+                            Width="20"
+                            Height="20"
+                            Margin="5,0,5,0"
+                            VerticalAlignment="Center"
+                            BorderThickness="0"
+                            Click="MaximizeApp"
+                            Opacity="0.5">
+                            <Image
+                                Width="15"
+                                Height="15"
+                                Source="/Resources/Icons/MaximizeIcon.png" />
+                        </Button>
+                        <Button
+                            Width="20"
+                            Height="20"
+                            Margin="5,0,5,0"
+                            VerticalAlignment="Center"
+                            BorderThickness="0"
                             Click="CloseApp"
                             Opacity="0.5">
                             <Image
                                 Width="15"
                                 Height="15"
-                                Source="/Resources/Icons/Close.png" />
+                                Source="/Resources/Icons/CloseIcon.png" />
                         </Button>
                     </StackPanel>
                 </Border>

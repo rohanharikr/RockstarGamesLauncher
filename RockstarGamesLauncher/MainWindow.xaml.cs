@@ -21,6 +21,19 @@ namespace RockstarGamesLauncher
             DragMove();
         }
 
+        private void MinimizeApp(object sender, RoutedEventArgs e)
+        {
+            WindowState = WindowState.Minimized;
+        }
+
+        private void MaximizeApp(object sender, RoutedEventArgs e)
+        {
+            if(WindowState is WindowState.Maximized)
+                WindowState = WindowState.Normal;
+            else
+                WindowState = WindowState.Maximized;
+        }
+
         private void CloseApp(object sender, RoutedEventArgs e)
         {
             Close();
