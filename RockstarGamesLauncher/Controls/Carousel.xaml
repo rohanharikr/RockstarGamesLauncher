@@ -7,7 +7,7 @@
     xmlns:local="clr-namespace:RockstarGamesLauncher.Controls"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     x:Name="CarouselControl"
-    Height="280"
+    Height="285"
     mc:Ignorable="d">
 
     <UserControl.Resources>
@@ -38,6 +38,13 @@
                             Margin="0,0,10,0"
                             Padding="5"
                             Background="Black">
+                            <Border.Effect>
+                                <DropShadowEffect
+                                    BlurRadius="0"
+                                    Direction="315"
+                                    Opacity="0.25"
+                                    ShadowDepth="8" />
+                            </Border.Effect>
                             <Button Click="OpenFeedPost" Tag="{Binding Link}">
                                 <Grid>
                                     <Grid.RowDefinitions>
