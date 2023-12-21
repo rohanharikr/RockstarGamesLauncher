@@ -33,10 +33,10 @@ namespace RockstarGamesLauncher.Models
             public string? Title { get; set; }
 
             [JsonPropertyName("image")]
-            public string? Image { get; set; }
+            public Uri? Image { get; set; }
 
             [JsonPropertyName("link")]
-            public string? Link { get; set; }
+            public Uri? Link { get; set; }
         }
     }
     
