@@ -24,7 +24,7 @@
             Name="Aside"
             Grid.Column="0"
             Width="270"
-            Padding="35,0,35,35"
+            Padding="0,0,35,35"
             Background="Black">
             <Border.Style>
                 <Style>
@@ -73,33 +73,26 @@
                 </Grid.RowDefinitions>
 
                 <StackPanel Grid.Row="1" VerticalAlignment="Top">
-                    <StackPanel Margin="5,20,0,0">
+                    <StackPanel>
                         <Label
                             FontSize="14"
                             FontWeight="Bold"
+                            Margin="40,0,0,0"
                             Visibility="{Binding IsExpanded, Converter={StaticResource BooleanToVisibilityConverter}}">
                             Now available
                         </Label>
-                        <ItemsControl
+                        <ListView
                             Background="Transparent"
                             BorderThickness="0"
-                            ItemsSource="{Binding Games}">
-                            <ItemsControl.ItemTemplate>
-                                <DataTemplate>
-                                    <controls:AsideNavItem
-                                        Command="{Binding Path=DataContext.SelectGameCommand, RelativeSource={RelativeSource AncestorType={x:Type StackPanel}}}"
-                                        CommandParameter="{Binding .}"
-                                        Icon="{Binding Icon}"
-                                        Label="{Binding Name}" />
-                                </DataTemplate>
-                            </ItemsControl.ItemTemplate>
-                        </ItemsControl>
+                            ItemContainerStyle="{StaticResource AsideNavItem}"
+                            ItemsSource="{Binding Games}"
+                            SelectedItem="{Binding SelectedGame}" />
                     </StackPanel>
                 </StackPanel>
 
                 <StackPanel Grid.Row="2">
                     <Button
-                        Margin="5,0,0,0"
+                        Margin="40,0,0,0"
                         HorizontalAlignment="Left"
                         BorderThickness="0"
                         Command="{Binding ToggleExpandCommand}"
