@@ -9,7 +9,7 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources/Styles/Reset.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
-                <ResourceDictionary Source="Resources/Styles/Buttons.xaml" />
+                <ResourceDictionary Source="Resources/Styles/BuyButton.xaml" />
                 <ResourceDictionary Source="Resources/Styles/AsideNavItem.xaml" />
             </ResourceDictionary.MergedDictionaries>
             <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
