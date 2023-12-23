@@ -79,27 +79,26 @@
                 Height="38"
                 HorizontalAlignment="Left"
                 Click="PrevButtonClick">
-                <Button.Background>
-                    <SolidColorBrush Opacity="0.85" Color="Black" />
-                </Button.Background>
-                <Image
-                    Width="30"
-                    Height="30"
-                    Source="/Resources/Icons/LeftIcon.png" />
+                <Border Background="Black">
+                    <Image
+                        Width="30"
+                        Height="30"
+                        Source="/Resources/Icons/LeftIcon.png" />
+                </Border>
             </Button>
             <Button
                 x:Name="NextButton"
                 Width="38"
                 Height="38"
                 HorizontalAlignment="Right"
+                Background="Black"
                 Click="NextButtonClick">
-                <Button.Background>
-                    <SolidColorBrush Opacity="0.85" Color="Black" />
-                </Button.Background>
-                <Image
-                    Width="30"
-                    Height="30"
-                    Source="/Resources/Icons/RightIcon.png" />
+                <Border Background="Black">
+                    <Image
+                        Width="30"
+                        Height="30"
+                        Source="/Resources/Icons/RightIcon.png" />
+                </Border>
             </Button>
         </DockPanel>
     </Grid>

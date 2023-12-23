@@ -36,7 +36,34 @@
         </Setter>
         <Style.Triggers>
             <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Background" Value="{StaticResource RockstarYellow}" />
+                <Trigger.EnterActions>
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation
+                                Storyboard.TargetProperty="(Button.Background).(LinearGradientBrush.GradientStops)[0].Color"
+                                To="#FFAB00"
+                                Duration="0:0:0.2" />
+                            <ColorAnimation
+                                Storyboard.TargetProperty="(Button.Background).(LinearGradientBrush.GradientStops)[1].Color"
+                                To="#FFAB00"
+                                Duration="0:0:0.2" />
+                        </Storyboard>
+                    </BeginStoryboard>
+                </Trigger.EnterActions>
+                <Trigger.ExitActions>
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation
+                                Storyboard.TargetProperty="(Button.Background).(LinearGradientBrush.GradientStops)[0].Color"
+                                To="#FCFCFB"
+                                Duration="0:0:0.2" />
+                            <ColorAnimation
+                                Storyboard.TargetProperty="(Button.Background).(LinearGradientBrush.GradientStops)[1].Color"
+                                To="#AEAEAE"
+                                Duration="0:0:0.2" />
+                        </Storyboard>
+                    </BeginStoryboard>
+                </Trigger.ExitActions>
             </Trigger>
         </Style.Triggers>
     </Style>

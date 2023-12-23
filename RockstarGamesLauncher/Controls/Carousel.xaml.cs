@@ -64,8 +64,8 @@ namespace RockstarGamesLauncher.Controls
         private void OpenFeedPost(object sender, RoutedEventArgs e)
         {
             var button = sender as Button;
-            string link = (string)button.Tag;
-            System.Diagnostics.Process.Start(new ProcessStartInfo(link)
+            Uri link = (Uri)button.Tag;
+            System.Diagnostics.Process.Start(new ProcessStartInfo(link.ToString())
             {
                 UseShellExecute = true
             });
