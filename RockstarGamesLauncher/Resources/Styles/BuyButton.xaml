@@ -17,6 +17,13 @@
                         Padding="3"
                         Background="{TemplateBinding Background}"
                         CornerRadius="6">
+                        <Border.Effect>
+                            <DropShadowEffect
+                                BlurRadius="0"
+                                Direction="315"
+                                Opacity="0.35"
+                                ShadowDepth="8" />
+                        </Border.Effect>
                         <Border
                             Padding="16"
                             BorderBrush="Black"
