@@ -26,7 +26,7 @@ namespace RockstarGamesLauncher.Models
 
         [JsonPropertyName("feed")]
         public List<Post>? Feed { get; set; }
-        
+
         public class Post()
         {
             [JsonPropertyName("title")]

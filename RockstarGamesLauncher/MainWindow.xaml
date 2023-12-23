@@ -85,11 +85,16 @@
                 Margin="0,10,0,0"
                 Padding="35,0,35,0">
                 <DockPanel>
-                    <Button
+                    <Border
                         Width="40"
                         Height="36"
                         BorderThickness="0"
-                        Command="{Binding GotoGamesCommand}">
+                        Cursor="Hand"
+                        Opacity="1">
+                        <!--  TBD: We do not want the logo to have lower default opacity  -->
+                        <Border.InputBindings>
+                            <MouseBinding Command="{Binding DataContext.GotoGamesCommand, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Border}}}" MouseAction="LeftClick" />
+                        </Border.InputBindings>
                         <Image
                             Grid.Row="0"
                             Width="40"
@@ -97,7 +102,7 @@
                             HorizontalAlignment="Left"
                             VerticalAlignment="Top"
                             Source="/Resources/Images/RockstarGamesLogo.png" />
-                    </Button>
+                    </Border>
 
                     <StackPanel
                         HorizontalAlignment="Right"
@@ -111,6 +116,9 @@
                             FontSize="16"
                             FontWeight="Medium"
                             Foreground="White">
+                            <Button.Effect>
+                                <DropShadowEffect BlurRadius="10" Opacity="0.6" />
+                            </Button.Effect>
                             GAMES
                         </Button>
                         <Button
@@ -122,6 +130,9 @@
                             FontSize="16"
                             FontWeight="Medium"
                             Foreground="White">
+                            <Button.Effect>
+                                <DropShadowEffect BlurRadius="10" Opacity="0.6" />
+                            </Button.Effect>
                             SETTINGS
                         </Button>
                         <Ellipse
