@@ -17,60 +17,39 @@
         </Grid.ColumnDefinitions>
 
         <Border
+            Name="Aside"
             Grid.Column="0"
-            Padding="35,0,35,35"
+            Width="270"
+            Padding="0,0,35,35"
             Background="Black">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="135" />
                     <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
 
                 <StackPanel Grid.Row="1" VerticalAlignment="Top">
                     <StackPanel>
-                        <Label FontWeight="Bold">Launcher Settings</Label>
-                        <StackPanel Margin="0,5,0,0">
-                            <Button
-                                Margin="0,10,0,0"
-                                HorizontalAlignment="Left"
-                                VerticalAlignment="Center"
-                                BorderThickness="0"
-                                Command="{Binding GotoGeneralCommand}"
-                                Foreground="White"
-                                Opacity="0.65">
-                                General
-                            </Button>
-                            <Button
-                                Margin="0,10,0,0"
-                                HorizontalAlignment="Left"
-                                VerticalAlignment="Center"
-                                BorderThickness="0"
-                                Command="{Binding GotoAccountInfoCommand}"
-                                Foreground="White"
-                                Opacity="0.65">
-                                Account Information
-                            </Button>
-                            <Button
-                                Margin="0,10,0,0"
-                                HorizontalAlignment="Left"
-                                VerticalAlignment="Center"
-                                BorderThickness="0"
-                                Command="{Binding GotoUpdatesCommand}"
-                                Foreground="White"
-                                Opacity="0.65">
-                                Updates
-                            </Button>
-                            <Button
-                                Margin="0,10,0,0"
-                                HorizontalAlignment="Left"
-                                VerticalAlignment="Center"
-                                BorderThickness="0"
-                                Command="{Binding GotoLegalCommand}"
-                                Foreground="White"
-                                Opacity="0.65">
-                                Legal
-                            </Button>
-                        </StackPanel>
+                        <Label
+                            Margin="40,0,0,0"
+                            FontSize="14"
+                            FontWeight="Bold">
+                            Launcher settings
+                        </Label>
+                        <ListView
+                            Margin="0,15,0,0"
+                            Background="Transparent"
+                            BorderThickness="0"
+                            ItemContainerStyle="{StaticResource AsideNavItem}"
+                            ScrollViewer.HorizontalScrollBarVisibility="Hidden"
+                            SelectedIndex="0"
+                            SelectionMode="Single">
+                            <ListViewItem Content="General" />
+                            <ListViewItem Content="Account Information" />
+                            <ListViewItem Content="Updates" />
+                            <ListViewItem Content="Legal" />
+                        </ListView>
                     </StackPanel>
                 </StackPanel>
             </Grid>

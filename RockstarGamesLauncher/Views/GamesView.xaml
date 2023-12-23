@@ -72,9 +72,7 @@
                     <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
 
-                <StackPanel
-                    Grid.Row="1"
-                    VerticalAlignment="Top">
+                <StackPanel Grid.Row="1" VerticalAlignment="Top">
                     <StackPanel>
                         <Label
                             Margin="40,0,0,0"
@@ -86,9 +84,9 @@
                         <ListView
                             Background="Transparent"
                             BorderThickness="0"
-                            ScrollViewer.HorizontalScrollBarVisibility="Hidden"
-                            ItemContainerStyle="{StaticResource AsideNavItem}"
+                            ItemContainerStyle="{StaticResource AsideNavIconItem}"
                             ItemsSource="{Binding Games}"
+                            ScrollViewer.HorizontalScrollBarVisibility="Hidden"
                             SelectedItem="{Binding SelectedGame}"
                             SelectionMode="Single" />
                     </StackPanel>
