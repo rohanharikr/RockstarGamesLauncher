@@ -30,7 +30,7 @@
                             <Label
                                 Margin="15,0,0,0"
                                 VerticalAlignment="Center"
-                                Content="{TemplateBinding Content}">
+                                Content="{Binding}">
                                 <Label.Style>
                                     <Style TargetType="Label">
                                         <Setter Property="Opacity" Value="0.65" />
