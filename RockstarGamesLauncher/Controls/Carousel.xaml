@@ -54,10 +54,10 @@
 
                                     <Image
                                         Grid.Row="0"
-                                        HorizontalAlignment="Stretch"
+                                        HorizontalAlignment="Center"
                                         VerticalAlignment="Stretch"
                                         Source="{Binding Image}"
-                                        Stretch="UniformToFill" />
+                                        Stretch="UniformToFill"/>
                                     <TextBlock
                                         Grid.Row="1"
                                         Padding="15,8,15,8"
