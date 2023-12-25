@@ -40,12 +40,7 @@
                                     Text="Load the Rockstar Games Launcher when you start your computer"
                                     TextWrapping="Wrap" />
                             </StackPanel>
-                            <Button
-                                Grid.Column="1"
-                                HorizontalAlignment="Right"
-                                Style="{StaticResource RoundedButton}">
-                                VIEW POLICY
-                            </Button>
+                            <CheckBox Grid.Column="1" VerticalAlignment="Center"/>
                         </Grid>
                     </Border>
 
@@ -66,12 +61,7 @@
                                     Text="When selected, the Rockstar Games Launcher will hibernate in the background whilst a game is running"
                                     TextWrapping="Wrap" />
                             </StackPanel>
-                            <Button
-                                Grid.Column="1"
-                                HorizontalAlignment="Right"
-                                Style="{StaticResource RoundedButton}">
-                                DELETE
-                            </Button>
+                            <CheckBox Grid.Column="1" VerticalAlignment="Center"/>
                         </Grid>
                     </Border>
 
@@ -92,12 +82,7 @@
                                     Text="Send the Rockstar Games Launcher to the system tray when closing the active window"
                                     TextWrapping="Wrap" />
                             </StackPanel>
-                            <Button
-                                Grid.Column="1"
-                                HorizontalAlignment="Right"
-                                Style="{StaticResource RoundedButton}">
-                                DELETE
-                            </Button>
+                            <CheckBox Grid.Column="1" VerticalAlignment="Center"/>
                         </Grid>
                     </Border>
 

@@ -40,12 +40,7 @@
                                     Text="Attempt to sign in with your current profile automatically whenever the Rockstar Games Launcher starts"
                                     TextWrapping="Wrap" />
                             </StackPanel>
-                            <Button
-                                Grid.Column="1"
-                                HorizontalAlignment="Right"
-                                Style="{StaticResource RoundedButton}">
-                                VIEW POLICY
-                            </Button>
+                            <CheckBox Grid.Column="1" VerticalAlignment="Center" />
                         </Grid>
                     </Border>
 

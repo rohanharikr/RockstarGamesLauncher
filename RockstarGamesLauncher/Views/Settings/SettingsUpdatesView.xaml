@@ -35,9 +35,7 @@
                                 <Label VerticalAlignment="Center" FontSize="16">Desktop notifications</Label>
                                 <TextBlock Text="The Rockstar Games Launcher will display desktop notifications for downloads &amp; errors" TextWrapping="Wrap" Margin="0,6,0,0" FontSize="14" Opacity="0.65" />
                             </StackPanel>
-                            <Button HorizontalAlignment="Right" Style="{StaticResource RoundedButton}" Grid.Column="1">
-                                VIEW POLICY
-                            </Button>
+                            <CheckBox Grid.Column="1" VerticalAlignment="Center"/>
                         </Grid>
                     </Border>
 
@@ -53,9 +51,7 @@
                                 <Label VerticalAlignment="Center" FontSize="16">Throttle downloads</Label>
                                 <TextBlock Text="Set the maximum amount of bandwidth available to the Rockstar Games Launcher for downloading game and launcher updates" TextWrapping="Wrap" Margin="0,6,0,0" FontSize="14" Opacity="0.65" />
                             </StackPanel>
-                            <Button HorizontalAlignment="Right" Style="{StaticResource RoundedButton}" Grid.Column="1">
-                                VIEW POLICY
-                            </Button>
+                            <CheckBox Grid.Column="1" VerticalAlignment="Center"/>
                         </Grid>
                     </Border>
 
@@ -71,9 +67,7 @@
                                 <Label VerticalAlignment="Center" FontSize="16">Allow background downloads while in-game</Label>
                                 <TextBlock Text="Allow game and launcher updates in the background while running a game" TextWrapping="Wrap" Margin="0,6,0,0" FontSize="14" Opacity="0.65" />
                             </StackPanel>
-                            <Button HorizontalAlignment="Right" Style="{StaticResource RoundedButton}" Grid.Column="1">
-                                VIEW POLICY
-                            </Button>
+                            <CheckBox Grid.Column="1" VerticalAlignment="Center"/>
                         </Grid>
                     </Border>
 
@@ -89,9 +83,7 @@
                                 <Label VerticalAlignment="Center" FontSize="16">Throttle in-game download</Label>
                                 <TextBlock Text="Set a cap on the amount of bandwidth afforded to background updates while running a game" TextWrapping="Wrap" Margin="0,6,0,0" FontSize="14" Opacity="0.65" />
                             </StackPanel>
-                            <Button HorizontalAlignment="Right" Style="{StaticResource RoundedButton}" Grid.Column="1">
-                                VIEW POLICY
-                            </Button>
+                            <CheckBox Grid.Column="1" VerticalAlignment="Center"/>
                         </Grid>
                     </Border>
                 </StackPanel>
