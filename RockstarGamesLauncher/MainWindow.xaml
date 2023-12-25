@@ -12,6 +12,7 @@
     MinHeight="600"
     d:DataContext="{d:DesignData Type=viewmodels:MainViewModel}"
     AllowsTransparency="True"
+    Icon="Resources/Images/RockstarGamesLogo.png"
     WindowStartupLocation="CenterScreen"
     WindowStyle="None"
     mc:Ignorable="d">

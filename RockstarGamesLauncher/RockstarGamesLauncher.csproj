@@ -6,6 +6,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>Resources\Icons\RockstarGamesLogo.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -24,7 +25,7 @@
     <None Remove="Resources\Icons\MinimizeIcon.png" />
     <None Remove="Resources\Icons\rdr-online.png" />
     <None Remove="Resources\Icons\RightIcon.png" />
-    <None Remove="Resources\Icons\RocktarGamesLogo.ico" />
+    <None Remove="Resources\Icons\RockstarGamesLogo.ico" />
     <None Remove="Resources\Icons\Sidebar.png" />
     <None Remove="Resources\Images\GTAIVBackground.png" />
     <None Remove="Resources\Images\GTAIVLogo.png" />
@@ -33,6 +34,10 @@
     <None Remove="Resources\Images\RedDeadOnlineBackground.png" />
     <None Remove="Resources\Images\RedDeadOnlineLogo.png" />
     <None Remove="Resources\Images\RockstarGamesLogo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\Icons\RockstarGamesLogo.ico" />
   </ItemGroup>
 
   <ItemGroup>
@@ -46,7 +51,7 @@
     <Resource Include="Resources\Icons\LeftIcon.png" />
     <Resource Include="Resources\Icons\rdr-online.png" />
     <Resource Include="Resources\Icons\RightIcon.png" />
-    <Resource Include="Resources\Icons\RocktarGamesLogo.ico" />
+    <Resource Include="Resources\Icons\RockstarGamesLogo.ico" />
     <Resource Include="Resources\Icons\Sidebar.png" />
     <Resource Include="Resources\Icons\MinimizeIcon.png" />
     <Resource Include="Resources\Icons\MaximizeIcon.png" />
