@@ -28,26 +28,7 @@
                                             <Setter Property="Opacity" Value="1" />
                                         </DataTrigger>
                                         <Trigger Property="IsMouseOver" Value="True">
-                                            <Trigger.EnterActions>
-                                                <BeginStoryboard>
-                                                    <Storyboard>
-                                                        <DoubleAnimation
-                                                            Storyboard.TargetProperty="Opacity"
-                                                            To="1"
-                                                            Duration="0:0:0.25" />
-                                                    </Storyboard>
-                                                </BeginStoryboard>
-                                            </Trigger.EnterActions>
-                                            <Trigger.ExitActions>
-                                                <BeginStoryboard>
-                                                    <Storyboard>
-                                                        <DoubleAnimation
-                                                            Storyboard.TargetProperty="Opacity"
-                                                            To="0.65"
-                                                            Duration="0:0:0.25" />
-                                                    </Storyboard>
-                                                </BeginStoryboard>
-                                            </Trigger.ExitActions>
+                                            <Setter Property="Opacity" Value="1" />
                                         </Trigger>
                                     </Style.Triggers>
                                 </Style>
