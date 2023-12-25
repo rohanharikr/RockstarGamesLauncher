@@ -19,6 +19,7 @@
 [Custom navigation]
 [Animated Carousel]
 [JSON File API]
+[Custom titlebar]
 
 ## Legal
 
