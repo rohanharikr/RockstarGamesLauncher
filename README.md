@@ -1,27 +1,29 @@
+https://github.com/rohanharikr/RockstarGamesLauncher/assets/12775813/70d57f4a-8853-48ce-a6dc-18a634379174
+
 # Rockstar Games Launcher
 
 > [!IMPORTANT]
 > This project is strictly intended for educational purposes and is not affiliated with Rockstar Games.  
 > Please refer to the [Legal](#Legal) section for more information.
 
-[Video/GIF]
-
 ## Screenshots
 
-[GamesView]
-[SettingsView]
+#### Games
+![GamesView](./Screenshots/GamesView.png)
+
+#### Settings
+![SettingsView](./Screenshots/SettingsView.png)
 
 ## Features
-
-<div style="background-color: blue; width: 200rem; height: 200rem; display: block;"></div>
-
-[MVVM]
-[Animated Buttons]
-[Collapsable Sidebar]
-[Custom navigation]
-[Animated Carousel]
-[JSON File API]
-[Custom titlebar]
+|     Name      |    Demo    |
+| --------------|------------|
+| MVVM                   |  |
+| Animated buttons       |  |
+| Collapsable sidebar    |  |
+| Custom navigation      |  |
+| Animated carousel      |  |
+| JSON file API          |  |
+| Custom titlebar        |  |
 
 ## Legal
 
