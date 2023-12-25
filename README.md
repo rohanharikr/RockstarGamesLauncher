@@ -13,6 +13,8 @@
 
 ## Features
 
+<div style="background-color: blue; width: 200rem; height: 200rem; display: block;"></div>
+
 [MVVM]
 [Animated Buttons]
 [Collapsable Sidebar]
