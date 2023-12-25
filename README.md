@@ -15,15 +15,15 @@ https://github.com/rohanharikr/RockstarGamesLauncher/assets/12775813/70d57f4a-88
 ![SettingsView](./Screenshots/SettingsView.png)
 
 ## Features
-|     Name      |    Demo    |
-| --------------|------------|
-| MVVM                   |  |
-| Animated buttons       |  |
-| Collapsable sidebar    |  |
-| Custom navigation      |  |
-| Animated carousel      |  |
-| JSON file API          |  |
-| Custom titlebar        |  |
+|     Name               |    Demo                                   |
+| -----------------------|-------------------------------------------|
+| MVVM                   | ![](./Screenshots/MVVM.png)               |
+| Animated buttons       | ![](./Screenshots/ButtonEffects.gif)      |
+| Collapsible sidebar    | ![](./Screenshots/CollapsibleSidebar.gif) |
+| Custom navigation      | ![](./Screenshots/CustomNavigation.gif)   |
+| Animated carousel      | ![](./Screenshots/AnimatedCarousel.gif)   |
+| JSON file API          | ![](./Screenshots/JsonFileApi.png)        |
+| Custom titlebar        | ![](./Screenshots/CustomTitlebar.gif)     |
 
 ## Legal
 
