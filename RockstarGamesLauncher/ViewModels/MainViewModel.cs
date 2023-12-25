@@ -43,24 +43,5 @@ namespace RockstarGamesLauncher.ViewModels
                     break;
             }
         }
-
-
-        [RelayCommand]
-        void GotoGames()
-        {
-            if (CurrentPage is GamesView)
-                return;
-
-            CurrentPage = new GamesView();
-        }
-
-        [RelayCommand]
-        void GotoSettings()
-        {
-            if (CurrentPage is SettingsView)
-                return;
-
-            CurrentPage = new SettingsView();
-        }
     }
 }

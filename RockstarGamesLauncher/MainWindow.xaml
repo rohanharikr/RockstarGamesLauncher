@@ -89,12 +89,7 @@
                         Width="40"
                         Height="36"
                         BorderThickness="0"
-                        Cursor="Hand"
                         Opacity="1">
-                        <!--  TBD: We do not want the logo to have lower default opacity  -->
-                        <Border.InputBindings>
-                            <MouseBinding Command="{Binding DataContext.GotoGamesCommand, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Border}}}" MouseAction="LeftClick" />
-                        </Border.InputBindings>
                         <Image
                             Grid.Row="0"
                             Width="40"
@@ -104,7 +99,10 @@
                             Source="/Resources/Images/RockstarGamesLogo.png" />
                     </Border>
 
-                    <StackPanel HorizontalAlignment="Right" Orientation="Horizontal" VerticalAlignment="Center">
+                    <StackPanel
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        Orientation="Horizontal">
                         <ListView
                             HorizontalAlignment="Right"
                             VerticalAlignment="Center"
