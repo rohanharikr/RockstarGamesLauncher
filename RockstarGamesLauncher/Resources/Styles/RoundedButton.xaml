@@ -9,6 +9,7 @@
                         x:Name="border"
                         Padding="38,11,38,11"
                         Background="Transparent"
+                        VerticalAlignment="Center"
                         BorderThickness="1"
                         CornerRadius="25">
                         <Border.BorderBrush>

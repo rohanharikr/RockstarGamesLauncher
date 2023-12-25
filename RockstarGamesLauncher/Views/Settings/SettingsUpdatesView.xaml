@@ -20,89 +20,80 @@
             <Border
                 Grid.Row="1"
                 Grid.Column="0"
-                MaxWidth="750"
-                Padding="35,0,35,0">
+                Width="750"
+                Margin="0,-32,0,0"
+                Padding="50,0,50,0"
+                HorizontalAlignment="Left">
                 <StackPanel HorizontalAlignment="Stretch">
-                    <Grid Height="80">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="Auto" />
-                        </Grid.ColumnDefinitions>
+                    <Border Padding="0,20,0,20">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Grid.Column="0" Margin="0,0,10,0">
+                                <Label VerticalAlignment="Center" FontSize="16">Desktop notifications</Label>
+                                <TextBlock Text="The Rockstar Games Launcher will display desktop notifications for downloads &amp; errors" TextWrapping="Wrap" Margin="0,6,0,0" FontSize="14" Opacity="0.65" />
+                            </StackPanel>
+                            <Button HorizontalAlignment="Right" Style="{StaticResource RoundedButton}" Grid.Column="1">
+                                VIEW POLICY
+                            </Button>
+                        </Grid>
+                    </Border>
 
-                        <StackPanel Grid.Column="0" VerticalAlignment="Center">
-                            <Label VerticalAlignment="Center" FontSize="20">Desktop notifications</Label>
-                            <TextBlock
-                                VerticalAlignment="Center"
-                                FontSize="14"
-                                Opacity="0.65"
-                                Text="The Rockstar Games Launcher will display desktop notifications for downloads &amp; errors"
-                                TextWrapping="Wrap" />
-                        </StackPanel>
-                        <Button
-                            Grid.Column="1"
-                            Width="160"
-                            Height="40"
-                            HorizontalAlignment="Right"
-                            VerticalAlignment="Center"
-                            FontSize="16"
-                            Foreground="White">
-                            VIEW POLICY
-                        </Button>
-                    </Grid>
-                    <Border Height="0.35" Background="White" />
-                    <Grid Height="80">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="Auto" />
-                        </Grid.ColumnDefinitions>
+                    <Border Height="0.25" Background="White" />
 
-                        <StackPanel Grid.Column="0" VerticalAlignment="Center">
-                            <Label VerticalAlignment="Center" FontSize="20">Throttle downloads</Label>
-                            <TextBlock
-                                VerticalAlignment="Center"
-                                FontSize="14"
-                                Opacity="0.65"
-                                Text="Set the maximum amount of bandwith available to the Rockstar Games Launcher for downloading game and launcher updates"
-                                TextWrapping="Wrap" />
-                        </StackPanel>
-                        <Button
-                            Grid.Column="1"
-                            Width="160"
-                            Height="40"
-                            HorizontalAlignment="Right"
-                            VerticalAlignment="Center"
-                            FontSize="16"
-                            Foreground="White">
-                            VIEW POLICY
-                        </Button>
-                    </Grid>
-                    <Border Height="0.35" Background="White" />
-                    <Grid Height="80">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="Auto" />
-                        </Grid.ColumnDefinitions>
+                    <Border Padding="0,20,0,20">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Grid.Column="0" Margin="0,0,10,0">
+                                <Label VerticalAlignment="Center" FontSize="16">Throttle downloads</Label>
+                                <TextBlock Text="Set the maximum amount of bandwidth available to the Rockstar Games Launcher for downloading game and launcher updates" TextWrapping="Wrap" Margin="0,6,0,0" FontSize="14" Opacity="0.65" />
+                            </StackPanel>
+                            <Button HorizontalAlignment="Right" Style="{StaticResource RoundedButton}" Grid.Column="1">
+                                VIEW POLICY
+                            </Button>
+                        </Grid>
+                    </Border>
 
-                        <StackPanel Grid.Column="0" VerticalAlignment="Center">
-                            <Label VerticalAlignment="Center" FontSize="20">Allow background downloads while in-game</Label>
-                            <TextBlock
-                                VerticalAlignment="Center"
-                                FontSize="14"
-                                Opacity="0.65"
-                                Text="Allow game and launcher updates in the background while running a game"
-                                TextWrapping="Wrap" />
-                        </StackPanel>
-                        <Button
-                            Grid.Column="1"
-                            Width="160"
-                            Height="40"
-                            HorizontalAlignment="Right"
-                            VerticalAlignment="Center"
-                            FontSize="16"
-                            Foreground="White">
-                            VIEW POLICY
-                        </Button>
-                    </Grid>
+                    <Border Height="0.25" Background="White" />
+
+                    <Border Padding="0,20,0,20">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Grid.Column="0" Margin="0,0,10,0">
+                                <Label VerticalAlignment="Center" FontSize="16">Allow background downloads while in-game</Label>
+                                <TextBlock Text="Allow game and launcher updates in the background while running a game" TextWrapping="Wrap" Margin="0,6,0,0" FontSize="14" Opacity="0.65" />
+                            </StackPanel>
+                            <Button HorizontalAlignment="Right" Style="{StaticResource RoundedButton}" Grid.Column="1">
+                                VIEW POLICY
+                            </Button>
+                        </Grid>
+                    </Border>
+
+                    <Border Height="0.25" Background="White" />
+
+                    <Border Padding="0,20,0,20">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Grid.Column="0" Margin="0,0,10,0">
+                                <Label VerticalAlignment="Center" FontSize="16">Throttle in-game download</Label>
+                                <TextBlock Text="Set a cap on the amount of bandwidth afforded to background updates while running a game" TextWrapping="Wrap" Margin="0,6,0,0" FontSize="14" Opacity="0.65" />
+                            </StackPanel>
+                            <Button HorizontalAlignment="Right" Style="{StaticResource RoundedButton}" Grid.Column="1">
+                                VIEW POLICY
+                            </Button>
+                        </Grid>
+                    </Border>
                 </StackPanel>
             </Border>
         </Grid>
