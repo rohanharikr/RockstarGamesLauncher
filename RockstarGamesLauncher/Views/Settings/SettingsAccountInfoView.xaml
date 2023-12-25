@@ -74,58 +74,6 @@
                             </Button>
                         </Grid>
                     </Border>
-
-                    <Border Height="0.25" Background="White" />
-
-                    <Border Padding="0,20,0,20">
-                        <Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*" />
-                                <ColumnDefinition Width="Auto" />
-                            </Grid.ColumnDefinitions>
-                            <StackPanel Grid.Column="0" Margin="0,0,10,0">
-                                <Label VerticalAlignment="Center" FontSize="16">Allow background downloads while in-game</Label>
-                                <TextBlock
-                                    Margin="0,6,0,0"
-                                    FontSize="14"
-                                    Opacity="0.65"
-                                    Text="Allow game and launcher updates in the background while running a game"
-                                    TextWrapping="Wrap" />
-                            </StackPanel>
-                            <Button
-                                Grid.Column="1"
-                                HorizontalAlignment="Right"
-                                Style="{StaticResource RoundedButton}">
-                                VIEW POLICY
-                            </Button>
-                        </Grid>
-                    </Border>
-
-                    <Border Height="0.25" Background="White" />
-
-                    <Border Padding="0,20,0,20">
-                        <Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*" />
-                                <ColumnDefinition Width="Auto" />
-                            </Grid.ColumnDefinitions>
-                            <StackPanel Grid.Column="0" Margin="0,0,10,0">
-                                <Label VerticalAlignment="Center" FontSize="16">Throttle in-game download</Label>
-                                <TextBlock
-                                    Margin="0,6,0,0"
-                                    FontSize="14"
-                                    Opacity="0.65"
-                                    Text="Set a cap on the amount of bandwidth afforded to background updates while running a game"
-                                    TextWrapping="Wrap" />
-                            </StackPanel>
-                            <Button
-                                Grid.Column="1"
-                                HorizontalAlignment="Right"
-                                Style="{StaticResource RoundedButton}">
-                                VIEW POLICY
-                            </Button>
-                        </Grid>
-                    </Border>
                 </StackPanel>
             </Border>
         </Grid>
