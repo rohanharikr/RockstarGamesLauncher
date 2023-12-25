@@ -21,7 +21,7 @@
                 Grid.Row="1"
                 Grid.Column="0"
                 Width="750"
-                Margin="0,-32,0,0"
+                Margin="0,-22,0,0"
                 Padding="50,0,50,0"
                 HorizontalAlignment="Left">
                 <StackPanel HorizontalAlignment="Stretch">
