@@ -104,42 +104,23 @@
                             Source="/Resources/Images/RockstarGamesLogo.png" />
                     </Border>
 
-                    <StackPanel
-                        HorizontalAlignment="Right"
-                        VerticalAlignment="Top"
-                        Orientation="Horizontal">
-                        <Button
-                            Margin="20,0,20,0"
+                    <StackPanel HorizontalAlignment="Right" Orientation="Horizontal" VerticalAlignment="Center">
+                        <ListView
+                            HorizontalAlignment="Right"
                             VerticalAlignment="Center"
+                            Background="Transparent"
                             BorderThickness="0"
-                            Command="{Binding GotoGamesCommand}"
-                            FontSize="16"
-                            FontWeight="Medium"
-                            Foreground="White">
-                            <Button.Effect>
-                                <DropShadowEffect BlurRadius="10" Opacity="0.6" />
-                            </Button.Effect>
-                            GAMES
-                        </Button>
-                        <Button
-                            Margin="20,0,20,0"
-                            Padding="0"
-                            VerticalAlignment="Center"
-                            BorderThickness="0"
-                            Command="{Binding GotoSettingsCommand}"
-                            FontSize="16"
-                            FontWeight="Medium"
-                            Foreground="White">
-                            <Button.Effect>
-                                <DropShadowEffect BlurRadius="10" Opacity="0.6" />
-                            </Button.Effect>
-                            SETTINGS
-                        </Button>
-                        <Ellipse
-                            Width="40"
-                            Height="40"
-                            Margin="20,0,0,0"
-                            VerticalAlignment="Center">
+                            ItemContainerStyle="{StaticResource NavItem}"
+                            ItemsSource="{Binding NavItems}"
+                            SelectedIndex="{Binding SelectedPageIndex}"
+                            SelectionMode="Single">
+                            <ListView.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <StackPanel VerticalAlignment="Stretch" Orientation="Horizontal" />
+                                </ItemsPanelTemplate>
+                            </ListView.ItemsPanel>
+                        </ListView>
+                        <Ellipse Width="40" Height="40">
                             <Ellipse.Fill>
                                 <ImageBrush ImageSource="https://avatars.githubusercontent.com/u/12775813?v=4" />
                             </Ellipse.Fill>

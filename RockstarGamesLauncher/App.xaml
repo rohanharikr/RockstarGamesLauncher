@@ -12,6 +12,7 @@
                 <ResourceDictionary Source="Resources/Styles/BuyButton.xaml" />
                 <ResourceDictionary Source="Resources/Styles/RoundedButton.xaml" />
                 <ResourceDictionary Source="Resources/Styles/RoundedFillButton.xaml" />
+                <ResourceDictionary Source="Resources/Styles/NavItem.xaml" />
                 <ResourceDictionary Source="Resources/Styles/AsideNavItem.xaml" />
                 <ResourceDictionary Source="Resources/Styles/AsideNavIconItem.xaml" />
             </ResourceDictionary.MergedDictionaries>
