@@ -9,21 +9,21 @@ https://github.com/rohanharikr/RockstarGamesLauncher/assets/12775813/70d57f4a-88
 ## Screenshots
 
 #### Games
-![GamesView](./Screenshots/GamesView.png)
+![GamesView](./README/GamesView.png)
 
 #### Settings
-![SettingsView](./Screenshots/SettingsView.png)
+![SettingsView](./README/SettingsView.png)
 
 ## Features
 |     Name               |    Demo                                   |
 | -----------------------|-------------------------------------------|
-| MVVM                   | ![](./Screenshots/MVVM.png)               |
-| Animated buttons       | ![](./Screenshots/ButtonEffects.gif)      |
-| Collapsible sidebar    | ![](./Screenshots/CollapsibleSidebar.gif) |
-| Custom navigation      | ![](./Screenshots/CustomNavigation.gif)   |
-| Animated carousel      | ![](./Screenshots/AnimatedCarousel.gif)   |
-| JSON file API          | ![](./Screenshots/JsonFileApi.png)        |
-| Custom titlebar        | ![](./Screenshots/CustomTitlebar.gif)     |
+| MVVM                   | ![](./README/MVVM.png)                    |
+| Animated buttons       | ![](./README/ButtonEffects.gif)           |
+| Collapsible sidebar    | ![](./README/CollapsibleSidebar.gif)      |
+| Custom navigation      | ![](./README/CustomNavigation.gif)        |
+| Animated carousel      | ![](./README/AnimatedCarousel.gif)        |
+| JSON file API          | ![](./README/JsonFileApi.png)             |
+| Custom titlebar        | ![](./README/CustomTitlebar.gif)          |
 
 ## Legal
 
