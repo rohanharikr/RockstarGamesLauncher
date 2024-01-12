@@ -2,6 +2,9 @@ https://github.com/rohanharikr/RockstarGamesLauncher/assets/12775813/70d57f4a-88
 
 # Rockstar Games Launcher
 
+Rewrite of the Rockstar Games Launcher Desktop Client.  
+Powered by C#/.NET WPF, IGDB, LiteDB.
+
 > [!IMPORTANT]
 > This project is strictly intended for educational purposes and is not affiliated with Rockstar Games.  
 > Please refer to the [Legal](#Legal) section for more information.
