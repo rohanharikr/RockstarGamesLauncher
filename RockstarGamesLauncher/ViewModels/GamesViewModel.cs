@@ -35,15 +35,9 @@ namespace RockstarGamesLauncher.ViewModels
         }
 
         [RelayCommand]
-        public void ToggleExpand()
-        {
-            IsExpanded = !IsExpanded;
-        }
+        public void ToggleExpand() => IsExpanded = !IsExpanded;        
 
         [RelayCommand]
-        public void SelectGame(GameModel selectGame)
-        {
-            SelectedGame = selectGame;
-        }
+        public void SelectGame(GameModel selectGame) => SelectedGame = selectGame;
     }
 }
