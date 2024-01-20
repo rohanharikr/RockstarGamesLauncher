@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CommunityToolkit.Mvvm.ComponentModel;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using RockstarGamesLauncher.Views;
-using RockstarGamesLauncher.Views.Settings;
 
 namespace RockstarGamesLauncher.ViewModels
 {
@@ -28,7 +22,7 @@ namespace RockstarGamesLauncher.ViewModels
         }
 
         [ObservableProperty]
-        public List<string> navItems = new List<string> { "GAMES", "SETTINGS" };
+        public List<string> navItems = ["GAMES", "SETTINGS"];
 
         [RelayCommand]
         void Navigate()

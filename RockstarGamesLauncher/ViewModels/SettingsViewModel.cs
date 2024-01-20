@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Controls;
-using CommunityToolkit.Mvvm.ComponentModel;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using RockstarGamesLauncher.Views.Settings;
 
@@ -29,7 +22,7 @@ namespace RockstarGamesLauncher.ViewModels
         }
 
         [ObservableProperty]
-        public List<string> settingsItems = new List<string> { "General", "Account information", "Updates", "Legal" };
+        public List<string> settingsItems = ["General", "Account information", "Updates", "Legal"];
 
         [RelayCommand]
         void Navigate()

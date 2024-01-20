@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.Json;
+﻿using System.Text.Json;
 using RockstarGamesLauncher.Models;
 using System.IO;
 using System.Collections.ObjectModel;
@@ -30,14 +26,12 @@ namespace RockstarGamesLauncher.ViewModels
             SelectedGame = Games.FirstOrDefault();
         }
 
-        ObservableCollection<GameModel> GetGames()
+        static ObservableCollection<GameModel> GetGames()
         {
             //TBD: Handle exceptions
-            using (StreamReader file = new StreamReader("Resources/Data/games.json"))
-            {
-                string json = file.ReadToEnd();
-                return JsonSerializer.Deserialize<ObservableCollection<GameModel>>(json);
-            }
+            using StreamReader file = new("Resources/Data/games.json");
+            string json = file.ReadToEnd();
+            return JsonSerializer.Deserialize<ObservableCollection<GameModel>>(json);
         }
 
         [RelayCommand]

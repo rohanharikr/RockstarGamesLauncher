@@ -1,10 +1,8 @@
-﻿
-<UserControl
+﻿<UserControl
     x:Class="RockstarGamesLauncher.Controls.Carousel"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:local="clr-namespace:RockstarGamesLauncher.Controls"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     x:Name="CarouselControl"
     Height="285"
@@ -33,6 +31,7 @@
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
                         <Border
+                            x:Name="Test"
                             Width="250"
                             Height="280"
                             Margin="0,0,10,0"
@@ -57,7 +56,7 @@
                                         HorizontalAlignment="Center"
                                         VerticalAlignment="Stretch"
                                         Source="{Binding Image}"
-                                        Stretch="UniformToFill"/>
+                                        Stretch="UniformToFill" />
                                     <TextBlock
                                         Grid.Row="1"
                                         Padding="15,8,15,8"
@@ -102,5 +101,4 @@
             </Button>
         </DockPanel>
     </Grid>
-
 </UserControl>

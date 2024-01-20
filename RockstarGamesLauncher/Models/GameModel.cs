@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Policy;
-using System.Text;
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 
 namespace RockstarGamesLauncher.Models
 {
@@ -39,6 +34,4 @@ namespace RockstarGamesLauncher.Models
             public Uri? Link { get; set; }
         }
     }
-    
-
 }

@@ -1,47 +1,33 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
 using System.Windows.Media.Animation;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace RockstarGamesLauncher.Controls
 {
-    /// <summary>
-    /// Interaction logic for Slider.xaml
-    /// </summary>
-
     public partial class Carousel : UserControl
     {
-        private int currentElement = 0;
-        private double cardWidth = 250;
-        private double cardMargin = 10;
-
-        public Carousel()
-        {
-            InitializeComponent();
-        }
-
+        #region Dependency properties
         public IEnumerable Feed
         {
             get { return (IEnumerable)GetValue(FeedProperty); }
             set { SetValue(FeedProperty, value); }
         }
-
         public static readonly DependencyProperty FeedProperty =
             DependencyProperty.Register("Feed", typeof(IEnumerable), typeof(Carousel), new PropertyMetadata());
+        #endregion
 
+        int currentElement = 0;
+
+        //TBD Get this from XAML
+        readonly double cardWidth = 250;
+        readonly double cardMargin = 10;
+
+        public Carousel()
+        {
+            InitializeComponent();
+        }
 
         private void NextButtonClick(object sender, RoutedEventArgs e)
         {
@@ -65,7 +51,7 @@ namespace RockstarGamesLauncher.Controls
         {
             var button = sender as Button;
             Uri link = (Uri)button.Tag;
-            System.Diagnostics.Process.Start(new ProcessStartInfo(link.ToString())
+            Process.Start(new ProcessStartInfo(link.ToString()) //Open link in browser
             {
                 UseShellExecute = true
             });
@@ -73,11 +59,14 @@ namespace RockstarGamesLauncher.Controls
 
         private void AnimateCarousel()
         {
+            //TBD Handle exceptions
             Storyboard storyboard = (this.Resources["CarouselStoryboard"] as Storyboard);
             DoubleAnimation animation = storyboard.Children.First() as DoubleAnimation;
             animation.Duration = TimeSpan.FromSeconds(0.2);
-            QuadraticEase easingFunction = new QuadraticEase();
-            easingFunction.EasingMode = EasingMode.EaseInOut;
+            QuadraticEase easingFunction = new()
+            {
+                EasingMode = EasingMode.EaseInOut
+            };
             animation.EasingFunction = easingFunction;
             animation.To = -(cardWidth + cardMargin) * currentElement;
             storyboard.Begin();
