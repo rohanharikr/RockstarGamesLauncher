@@ -15,7 +15,7 @@ namespace RockstarGamesLauncher.Controls
             set { SetValue(FeedProperty, value); }
         }
         public static readonly DependencyProperty FeedProperty =
-            DependencyProperty.Register("Feed", typeof(IEnumerable), typeof(Carousel), new PropertyMetadata());
+            DependencyProperty.Register("Feed", typeof(IEnumerable), typeof(Carousel), new PropertyMetadata(null, new PropertyChangedCallback(FeedPropertyChanged)));
         #endregion
 
         int currentElement = 0;
@@ -34,7 +34,7 @@ namespace RockstarGamesLauncher.Controls
             if (currentElement < CarouselStack.Items.Count - 1)
             {
                 currentElement++;
-                AnimateCarousel();
+                UpdateCarousel();
             }
         }
 
@@ -43,7 +43,7 @@ namespace RockstarGamesLauncher.Controls
             if (currentElement > 0)
             {
                 currentElement--;
-                AnimateCarousel();
+                UpdateCarousel();
             }
         }
 
@@ -57,12 +57,12 @@ namespace RockstarGamesLauncher.Controls
             });
         }
 
-        private void AnimateCarousel()
+        private void UpdateCarousel(bool animate = true)
         {
             //TBD Handle exceptions
             Storyboard storyboard = (this.Resources["CarouselStoryboard"] as Storyboard);
             DoubleAnimation animation = storyboard.Children.First() as DoubleAnimation;
-            animation.Duration = TimeSpan.FromSeconds(0.2);
+            animation.Duration = TimeSpan.FromSeconds(animate ? 0.2 : 0);
             QuadraticEase easingFunction = new()
             {
                 EasingMode = EasingMode.EaseInOut
@@ -70,6 +70,13 @@ namespace RockstarGamesLauncher.Controls
             animation.EasingFunction = easingFunction;
             animation.To = -(cardWidth + cardMargin) * currentElement;
             storyboard.Begin();
+        }
+
+        private static void FeedPropertyChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        {
+            Carousel carousel = (Carousel)d;
+            carousel.currentElement = 0;
+            carousel.UpdateCarousel(false);
         }
     }
 }
