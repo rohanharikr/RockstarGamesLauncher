@@ -1,13 +1,9 @@
 ﻿using System.Windows;
 using System.Windows.Input;
-using RockstarGamesLauncher.Views;
 using RockstarGamesLauncher.ViewModels;
 
 namespace RockstarGamesLauncher
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -16,15 +12,9 @@ namespace RockstarGamesLauncher
             DataContext = new MainViewModel();
         }
 
-        private void DragApp(object sender, MouseButtonEventArgs e)
-        {
-            DragMove();
-        }
+        private void DragApp(object sender, MouseButtonEventArgs e) => DragMove();
 
-        private void MinimizeApp(object sender, RoutedEventArgs e)
-        {
-            WindowState = WindowState.Minimized;
-        }
+        private void MinimizeApp(object sender, RoutedEventArgs e) => WindowState = WindowState.Minimized;
 
         private void MaximizeApp(object sender, RoutedEventArgs e)
         {
@@ -34,9 +24,6 @@ namespace RockstarGamesLauncher
                 WindowState = WindowState.Maximized;
         }
 
-        private void CloseApp(object sender, RoutedEventArgs e)
-        {
-            Close();
-        }
+        private void CloseApp(object sender, RoutedEventArgs e) => Close();
     }
 }
