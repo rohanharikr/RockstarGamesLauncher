@@ -9,6 +9,9 @@ namespace RockstarGamesLauncher.ViewModels
         [ObservableProperty]
         object? currentPage;
 
+        private GamesView gamesView;
+        private SettingsView settingsView;
+
         private int _selectedPageIndex;
         public int SelectedPageIndex
         {
@@ -19,6 +22,9 @@ namespace RockstarGamesLauncher.ViewModels
         public MainViewModel()
         {
             SelectedPageIndex = 0;
+            gamesView = new GamesView();
+            settingsView = new SettingsView();
+            Navigate();
         }
 
         [ObservableProperty]
@@ -30,10 +36,10 @@ namespace RockstarGamesLauncher.ViewModels
             switch (SelectedPageIndex)
             {
                 case 0:
-                    CurrentPage = new GamesView();
+                    CurrentPage = gamesView;
                     break;
                 case 1:
-                    CurrentPage = new SettingsView();
+                    CurrentPage = settingsView;
                     break;
             }
         }
