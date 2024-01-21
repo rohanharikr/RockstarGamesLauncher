@@ -15,10 +15,7 @@ namespace RockstarGamesLauncher.ViewModels
         public GameModel? selectedGame;
 
         [ObservableProperty]
-        [NotifyPropertyChangedFor(nameof(SidebarWidth))]
         public bool isExpanded = true;
-
-        public int SidebarWidth => IsExpanded ? 320 : 120;
 
         public GamesViewModel()
         {
